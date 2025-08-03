@@ -11,13 +11,13 @@ import Galeri from "./components/Galeri";
 import Komentar from "./components/Komentar";
 import Footer from "./components/Footer";
 import MemberGallery from "./components/MemberGalery";
+import InstrumentsList from "./components/InstrumentsList";
 
 function App() {
   const [showWelcome, setShowWelcome] = useState(true);
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
-    // Hilangkan scroll horizontal dari awal
     document.body.style.overflowX = "hidden";
   }, []);
 
@@ -58,6 +58,12 @@ function App() {
               </section>
               <section id="komentar" className="w-full overflow-x-hidden">
                 <Komentar />
+              </section>
+              <section id="instruments" className="py-10 px-4">
+                <h2 className="text-2xl font-bold text-center mb-4">
+                  Daftar Instrumen
+                </h2>
+                <InstrumentsList />
               </section>
             </main>
             <Footer />
