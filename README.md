@@ -1,12 +1,81 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🌐 Web Ativerse
 
-Currently, two official plugins are available:
+Web Ativerse adalah website single-page (SPA) interaktif untuk kelas yang menampilkan informasi penting seperti Home, About, Contact, Komentar, dan Galeri. Dibangun menggunakan React, TailwindCSS, GSAP, AOS, Framer Motion, dan Supabase untuk menyimpan komentar dan gambar galeri secara real-time.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Fitur Utama
 
-## Expanding the ESLint configuration
+- ✨ **Welcome Screen** interaktif seperti [eki.my.id](https://eki.my.id)
+- 📄 SPA (Single Page Application) – Navigasi tanpa reload
+- 💬 Komentar langsung tampil setelah dikirim
+- 🖼️ Galeri dengan upload gambar & preview modal
+- 🔐 Login otentikasi (khusus murid untuk upload)
+- 🛡️ Fitur hapus gambar hanya untuk admin
+- 🎨 Animasi dinamis & desain responsif
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Teknologi yang Digunakan
+
+- [React.js](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [GSAP](https://greensock.com/gsap/)
+- [AOS (Animate On Scroll)](https://michalsnik.github.io/aos/)
+- [Supabase](https://supabase.com/) – Database & Auth
+- [Lucide Icons](https://lucide.dev/)
+- [React Bits](https://react-bits.dev/) – UI Elements
+
+## 🧑‍💻 Instalasi Lokal
+
+1. Clone repositori ini:
+   ```bash
+   git clone https://github.com/aidilprmdta/web-ativerse.git
+   cd web-ativerse
+````
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Buat file `.env` dengan konfigurasi Supabase:
+
+   ```env
+   VITE_SUPABASE_URL=your_supabase_url
+   VITE_SUPABASE_ANON_KEY=your_anon_key
+   ```
+
+4. Jalankan proyek:
+
+   ```bash
+   npm run dev
+   ```
+
+## 🏗️ Struktur Halaman
+
+* **Home**: Intro + navigasi
+* **About**: Informasi singkat kelas
+* **Contact**: Kontak ketua kelas/pengurus
+* **Komentar**: Form + daftar komentar (real-time)
+* **Galeri**: Upload & tampilkan foto kenangan
+
+## 📷 Preview
+
+![Preview](preview-image-url.png) <!-- Ganti dengan screenshot proyek -->
+
+## 📌 Catatan
+
+* Login menggunakan Supabase Auth (email/password)
+* Admin ditentukan berdasarkan role di Supabase
+* Komentar disimpan dalam table `comments`
+* Galeri gambar disimpan di bucket Supabase Storage
+
+## 🤝 Kontribusi
+
+Kontribusi terbuka untuk siapa pun. Silakan fork dan pull request!
+
+## 📄 Lisensi
+
+MIT License © 2025 [Aidil Pramadita Putra](https://github.com/aidilprmdta)
+
+```
