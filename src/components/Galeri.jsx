@@ -133,6 +133,7 @@ export default function Galeri() {
             <p className="text-gray-300 md:text-lg leading-relaxed">
               Setiap gambar di atas adalah kenangan tak tergantikan dari perjalanan kita bersama.
               Semoga cerita-cerita di balik senyuman ini terus hidup dalam ingatan kita.
+              Mari kita terus menciptakan momen-momen baru yang akan kita kenang selamanya.
             </p>
           </div>
         </motion.div>

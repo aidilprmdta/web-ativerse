@@ -136,7 +136,7 @@ export default function Footer() {
             © {year} <span className="text-pink-400">Ativerse</span>. All rights reserved.
           </p>
           <p className="mt-1">
-            Dibuat dengan ❤️ oleh 21 anggota Ativerse
+            Dibuat dengan ❤️ oleh 21 anggota Ativerse UIN Syarif Kasim Riau
           </p>
         </motion.div>
       </div>

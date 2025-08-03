@@ -124,7 +124,7 @@ export default function About() {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <span>OPREC 24'</span>
+                    <span>ATIVERSE 24'</span>
                     <FaUsers className="w-5 h-5 ml-2" />
                   </motion.button>
                 </div>
@@ -159,7 +159,7 @@ export default function About() {
                   {index === 3 && (
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
                       <div>
-                        <p className="text-white font-medium">OPREC 24'</p>
+                        <p className="text-white font-medium">ATIVERSE 24'</p>
                         <p className="text-pink-300 text-sm">Momen kebersamaan kita</p>
                       </div>
                     </div>

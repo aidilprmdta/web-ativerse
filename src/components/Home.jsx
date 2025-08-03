@@ -43,7 +43,7 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 1 }}
         >
-          Ruang virtual tempat kita belajar, berbagi cerita, dan tumbuh bersama. Temukan kenangan, tinggalkan kesan ✨
+          Ruang virtual tempat kita belajar, berbagi cerita, dan tumbuh bersama. Temukan kenangan, tinggalkan kesalahan, dan buat kenangan indah. ✨
         </motion.p>
 
         {/* Tombol Navigasi */}

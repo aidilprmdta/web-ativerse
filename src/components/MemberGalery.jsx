@@ -12,7 +12,7 @@ const members = [
   },
   {
     name: "Aidil",
-    role: "Ketua Ativerse",
+    role: "Ativerse",
     image: "/src/assets/IMG_3521.JPG",
     instagram: "https://instagram.com/aidilprmdta",
   },
