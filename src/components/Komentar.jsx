@@ -78,7 +78,7 @@ export default function Komentar() {
             <div className="space-y-1">
               <label className="block text-sm font-medium text-pink-100 flex items-center gap-1">
                 <FaUser className="text-xs" />
-                Nama Anda
+                Nama Kamu
               </label>
               <input
                 type="text"
@@ -93,7 +93,7 @@ export default function Komentar() {
             
             <div className="space-y-1">
               <label className="block text-sm font-medium text-pink-100">
-                Pesan Anda
+                Pesan Kamu
               </label>
               <textarea
                 name="pesan"
