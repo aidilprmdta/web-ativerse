@@ -141,10 +141,10 @@ export default function About() {
             >
               {/* Replace these with your actual images */}
               {[
-                "/public/IMG_3521.JPG",
-                "/public/IMG_3521.JPG",
-                "/public/IMG_3521.JPG",
-                "/public/IMG_3521.JPG",
+                "/public/mutpi.png",
+                "/public/mutpi.png",
+                "/public/mutpi.png",
+                "/public/mutpi.png",
               ].map((src, index) => (
                 <motion.div
                   key={index}

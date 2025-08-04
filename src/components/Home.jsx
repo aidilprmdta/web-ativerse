@@ -17,7 +17,7 @@ export default function Home() {
         }}
       >
         <img
-          src="/Public/IMG_3521.JPG" // Replace with your image path
+          src="/Public/mutpi.png" // Replace with your image path
           alt="Background"
           className="w-full h-full object-cover"
         />

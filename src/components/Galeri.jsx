@@ -4,15 +4,23 @@ import AOS from 'aos';
 import { motion } from "framer-motion";
 
 const images = [
-  "/public/IMG_3521.JPG",
-  "/public/IMG_3521.JPG",
-  "/public/IMG_3521.JPG",
-  "/public/IMG_3521.JPG",
-  "/public/IMG_3521.JPG",
-  "/public/IMG_3521.JPG",
-  "/public/IMG_3521.JPG",
-  "/public/IMG_3521.JPG",
-  "/public/IMG_3521.JPG",
+  "/public/mutpi.png",
+  "/public/mutpi.png",
+  "/public/mutpi.png",
+  "/public/mutpi.png",
+  "/public/mutpi.png",
+  "/public/mutpi.png",
+  "/public/mutpi.png",
+  "/public/mutpi.png",
+  "/public/mutpi.png",
+  "/public/mutpi.png",
+  "/public/mutpi.png",
+  "/public/mutpi.png",
+  "/public/mutpi.png",
+  "/public/mutpi.png",
+  "/public/mutpi.png",
+  "/public/mutpi.png",
+  "/public/mutpi.png",
 ];
 
 export default function Galeri() {
