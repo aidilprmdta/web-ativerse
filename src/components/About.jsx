@@ -143,7 +143,7 @@ export default function About() {
               {[
                 "https://dl.dropboxusercontent.com/scl/fi/bdnkxfjqq06p435qnhkkc/IMG-20250224-WA0402.jpg?rlkey=i64p0u5s4szvgzny1spakx8ag",
                 "https://dl.dropboxusercontent.com/scl/fi/y49lqq93qrtctdmmrnvl6/IMG-20241114-WA0172.jpg?rlkey=y7wgpbirnjth5qm0j46hhvvhk",
-                "/public/mutpi.png",
+                "https://dl.dropboxusercontent.com/scl/fi/tssajeyxmg1p3jsmuxk8b/IMG-20241007-WA0011.jpg?rlkey=t1yym57rihkhptyawlmmt620z",
                 "/public/mutpi.png",
               ].map((src, index) => (
                 <motion.div

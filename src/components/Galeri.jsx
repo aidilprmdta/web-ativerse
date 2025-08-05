@@ -96,11 +96,11 @@ export default function Galeri() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-300 mb-4">
-            Galeri Kenangan
+            Perjalanan Waktu
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-300 mx-auto mb-6 rounded-full" />
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Kumpulan momen berharga yang telah kita lewati bersama
+            Merangkai cerita dalam setiap detik, mengabadikan momen-momen berharga yang takkan pernah pudar. Inilah galeri kenangan kita, tempat di mana setiap gambar bercerita tentang perjalanan kita bersama.
           </p>
         </motion.div>
 

@@ -41,7 +41,7 @@ export default function MemberGallery() {
   const currentSlide = slides[page];
 
   return (
-    <section className="relative py-20 overflow-hidden bg-gradient-to-br from-purple-900 via-indigo-800 to-pink-800">
+    <section className="relative py-20 overflow-hidden bg-gradient-to-br from-pink-900 via-indigo-800 to-purple-800">
       {/* Floating Background Elements */}
       <div className="absolute inset-0 overflow-hidden opacity-20">
         {[...Array(15)].map((_, i) => (
