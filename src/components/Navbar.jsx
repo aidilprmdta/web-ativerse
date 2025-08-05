@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     <motion.nav
       className={`fixed top-0 left-0 w-full px-6 md:px-10 py-4 z-50 transition-all duration-500 ${
-        scrolled ? "bg-gradient-to-r from-purple-900/90 to-indigo-900/90 backdrop-blur-md shadow-lg" : "bg-transparent"
+        scrolled ? "bg-gradient-to-r from-purple-540/90 backdrop-blur-md shadow-lg" : "bg-transparent"
       }`}
       initial={{ y: -60 }}
       animate={{ y: 0 }}
