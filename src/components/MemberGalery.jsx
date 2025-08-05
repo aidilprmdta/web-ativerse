@@ -9,127 +9,18 @@ const members = [
     role: "Ketua Ativerse",
     image: "/src/assets/IMG_3521.JPG",
     instagram: "https://instagram.com/aidilprmdta",
+    linkedin: "https://linkedin.com/in/aidilprmdta",
+    github: "https://github.com/aidilprmdta",
   },
   {
-    name: "Aidil",
-    role: "Ativerse",
-    image: "/src/assets/IMG_3521.JPG",
-    instagram: "https://instagram.com/aidilprmdta",
-  },
-  {
-    name: "Aidil",
+    name: "Mutpi",
     role: "Ketua Ativerse",
-    image: "/src/assets/IMG_3521.JPG",
+    image: "/public/mutpi.png",
     instagram: "https://instagram.com/aidilprmdta",
+    linkedin: "https://linkedin.com/in/aidilprmdta",
+    github: "https://github.com/aidilprmdta",
   },
-  {
-    name: "Aidil",
-    role: "Ketua Ativerse",
-    image: "/src/assets/IMG_3521.JPG",
-    instagram: "https://instagram.com/aidilprmdta",
-  },
-  {
-    name: "Aidil",
-    role: "Ketua Ativerse",
-    image: "/src/assets/IMG_3521.JPG",
-    instagram: "https://instagram.com/aidilprmdta",
-  },
-  {
-    name: "Aidil",
-    role: "Ketua Ativerse",
-    image: "/src/assets/IMG_3521.JPG",
-    instagram: "https://instagram.com/aidilprmdta",
-  },
-  {
-    name: "Aidil",
-    role: "Ketua Ativerse",
-    image: "/src/assets/IMG_3521.JPG",
-    instagram: "https://instagram.com/aidilprmdta",
-  },
-  {
-    name: "Aidil",
-    role: "Ketua Ativerse",
-    image: "/src/assets/IMG_3521.JPG",
-    instagram: "https://instagram.com/aidilprmdta",
-  },
-  {
-    name: "Aidil",
-    role: "Ketua Ativerse",
-    image: "/src/assets/IMG_3521.JPG",
-    instagram: "https://instagram.com/aidilprmdta",
-  },
-  {
-    name: "Aidil",
-    role: "Ketua Ativerse",
-    image: "/src/assets/IMG_3521.JPG",
-    instagram: "https://instagram.com/aidilprmdta",
-  },
-  {
-    name: "Aidil",
-    role: "Ketua Ativerse",
-    image: "/src/assets/IMG_3521.JPG",
-    instagram: "https://instagram.com/aidilprmdta",
-  },
-  {
-    name: "Aidil",
-    role: "Ketua Ativerse",
-    image: "/src/assets/IMG_3521.JPG",
-    instagram: "https://instagram.com/aidilprmdta",
-  },
-  {
-    name: "Aidil",
-    role: "Ketua Ativerse",
-    image: "/src/assets/IMG_3521.JPG",
-    instagram: "https://instagram.com/aidilprmdta",
-  },
-  {
-    name: "Aidil",
-    role: "Ketua Ativerse",
-    image: "/src/assets/IMG_3521.JPG",
-    instagram: "https://instagram.com/aidilprmdta",
-  },
-  {
-    name: "Aidil",
-    role: "Ketua Ativerse",
-    image: "/src/assets/IMG_3521.JPG",
-    instagram: "https://instagram.com/aidilprmdta",
-  },
-  {
-    name: "Aidil",
-    role: "Ketua Ativerse",
-    image: "/src/assets/IMG_3521.JPG",
-    instagram: "https://instagram.com/aidilprmdta",
-  },
-  {
-    name: "Aidil",
-    role: "Ketua Ativerse",
-    image: "/src/assets/IMG_3521.JPG",
-    instagram: "https://instagram.com/aidilprmdta",
-  },
-  {
-    name: "Aidil",
-    role: "Ketua Ativerse",
-    image: "/src/assets/IMG_3521.JPG",
-    instagram: "https://instagram.com/aidilprmdta",
-  },
-  {
-    name: "Aidil",
-    role: "Ketua Ativerse",
-    image: "/src/assets/IMG_3521.JPG",
-    instagram: "https://instagram.com/aidilprmdta",
-  },
-  {
-    name: "Aidil",
-    role: "Ketua Ativerse",
-    image: "/src/assets/IMG_3521.JPG",
-    instagram: "https://instagram.com/aidilprmdta",
-  },
-  {
-    name: "Aidil",
-    role: "Ketua Ativerse",
-    image: "/src/assets/IMG_3521.JPG",
-    instagram: "https://instagram.com/aidilprmdta",
-  },
+
   // Tambahkan anggota lain...
 ];
 
@@ -243,7 +134,7 @@ export default function MemberGallery() {
               <Instagram size={18} /> Follow on Instagram
             </a>
             <a
-              href={selected.instagram}
+              href={selected.linkedin}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-6 inline-flex items-center justify-center gap-2 px-4 py-2 bg-pink-600 text-white rounded-full hover:bg-pink-700 transition w-full"
@@ -251,7 +142,7 @@ export default function MemberGallery() {
               <Linkedin size={18} /> Koneksi On LinkedIn
             </a>
             <a
-              href={selected.instagram}
+              href={selected.github}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-6 inline-flex items-center justify-center gap-2 px-4 py-2 bg-pink-600 text-white rounded-full hover:bg-pink-700 transition w-full"
