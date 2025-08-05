@@ -4,11 +4,11 @@ import AOS from 'aos';
 import { motion } from "framer-motion";
 
 const images = [
-  "/public/mutpi.png",
-  "/public/mutpi.png",
-  "/public/mutpi.png",
-  "/public/mutpi.png",
-  "/public/mutpi.png",
+  "https://dl.dropboxusercontent.com/scl/fi/qzbt7mgzd850gpz6uuzro/IMG-20241002-WA0093.jpg?rlkey=76k1tv79phkrt4utgkiycwaw1",
+  "https://dl.dropboxusercontent.com/scl/fi/f9xr0h8bgpp5p8r9hhlmc/IMG-20241002-WA0107.jpg?rlkey=6t74dvxgyhvz6oswc4s79d6un",
+  "https://dl.dropboxusercontent.com/scl/fi/zje3wj838gzr86kveizlh/IMG-20241002-WA0111.jpg?rlkey=rap25j3cqxhhc8c7nonhgshdm",
+  "https://dl.dropboxusercontent.com/scl/fi/tssajeyxmg1p3jsmuxk8b/IMG-20241007-WA0011.jpg?rlkey=t1yym57rihkhptyawlmmt620z",
+  "https://dl.dropboxusercontent.com/scl/fi/y49lqq93qrtctdmmrnvl6/IMG-20241114-WA0172.jpg?rlkey=y7wgpbirnjth5qm0j46hhvvhk",
   "/public/mutpi.png",
   "/public/mutpi.png",
   "/public/mutpi.png",
@@ -122,7 +122,7 @@ export default function Galeri() {
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                  <span className="text-white font-medium text-lg">Kenangan {index % images.length + 1}</span>
+                  <span className="text-white font-medium text-lg">Ativerse {index % images.length + 1}</span>
                 </div>
               </motion.div>
             </div>
@@ -139,9 +139,12 @@ export default function Galeri() {
           <div className="max-w-3xl mx-auto text-center bg-white/10 backdrop-blur-md p-8 rounded-xl shadow-lg border border-white/20">
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">Kisah Kita</h3>
             <p className="text-gray-300 md:text-lg leading-relaxed">
-              Setiap gambar di atas adalah kenangan tak tergantikan dari perjalanan kita bersama.
-              Semoga cerita-cerita di balik senyuman ini terus hidup dalam ingatan kita.
-              Mari kita terus menciptakan momen-momen baru yang akan kita kenang selamanya.
+              Di antara ribuan detik waktu yang berlalu, ada serpihan-serpihan kenangan yang takkan pernah pudar—setiap gambar di atas adalah saksi bisu dari tawa yang menggemakan kebahagiaan, pelukan yang menghangatkan jiwa, dan momen-momen kecil yang justru menjadi harta paling berharga dalam perjalanan kita bersama. 
+              Inilah mozaik kisah kita, terukir dalam warna-warna senja yang sama, dalam langkah-langkah yang beriringan, dan dalam diam-diam yang selalu terasa nyaman. Setiap senyuman yang terabadikan bukan sekadar gambar, melainkan cerita yang hidup—cerita tentang bagaimana kita saling menemukan, saling menguatkan, dan saling melengkapi di tengah hingar-bingar dunia yang tak pernah berhenti berputar.  
+              Mari kita terus menulis bab-bab baru dengan tinta yang lebih berwarna, dengan hati yang tetap sama: penuh syukur, penuh cinta, dan penuh harap. Karena di setiap helaan napas, di setiap langkah yang kita jejakkan bersama, ada kesempatan untuk menciptakan momen yang nantinya akan kita kenang dengan rindu yang manis.  
+              Semoga waktu tak pernah mengikis kehangatan ini, semoga jarak tak pernah memudarkan makna kita, dan semoga kisah kita—yang penuh dengan bahtera harapan dan lautan ketulusan—terus mengalir seperti sungai yang tak pernah kering, mengalir hingga ke samudra keabadian.  
+              Bersamamu, setiap detik adalah halaman baru yang ingin kusimpan rapat-rapat dalam lembaran hidupku. Mari kita lanjutkan perjalanan ini, dengan lebih banyak cerita, lebih banyak tawa, dan lebih banyak cinta yang akan kita kenang selamanya.
+              <b>— Karena yang terindah tak selalu tentang bagaimana kisah dimulai, tapi tentang bagaimana kita memilih untuk terus menulisnya, bersama.</b>💫
             </p>
           </div>
         </motion.div>

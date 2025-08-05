@@ -17,11 +17,11 @@ export default function Home() {
         }}
       >
         <img
-          src="/Public/mutpi.png" // Replace with your image path
+          src="https://dl.dropboxusercontent.com/scl/fi/2n59vsa18fufx3sgx81rq/IMG-20250224-WA0482.jpg?rlkey=4rdf6bkv81h0k5tre2jk5lzey" // Replace with your image path
           alt="Background"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px]" />
+        <div className="absolute inset-0 bg-black/80 backdrop-blur-[1px]" />
       </motion.div>
 
       {/* Content */}

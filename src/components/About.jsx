@@ -94,7 +94,7 @@ export default function About() {
                     whileHover={{ y: -5 }}
                   >
                     <FaHeart className="text-pink-300 text-3xl mx-auto mb-2" />
-                    <p className="font-bold text-white">24+ Members</p>
+                    <p className="font-bold text-white">21+ Members</p>
                     <p className="text-sm text-gray-300">Dedicated Team</p>
                   </motion.div>
                   <motion.div 
@@ -141,8 +141,8 @@ export default function About() {
             >
               {/* Replace these with your actual images */}
               {[
-                "/public/mutpi.png",
-                "/public/mutpi.png",
+                "https://dl.dropboxusercontent.com/scl/fi/bdnkxfjqq06p435qnhkkc/IMG-20250224-WA0402.jpg?rlkey=i64p0u5s4szvgzny1spakx8ag",
+                "https://dl.dropboxusercontent.com/scl/fi/y49lqq93qrtctdmmrnvl6/IMG-20241114-WA0172.jpg?rlkey=y7wgpbirnjth5qm0j46hhvvhk",
                 "/public/mutpi.png",
                 "/public/mutpi.png",
               ].map((src, index) => (
