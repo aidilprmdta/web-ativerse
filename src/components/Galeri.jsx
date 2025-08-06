@@ -139,12 +139,7 @@ export default function Galeri() {
           <div className="max-w-3xl mx-auto text-center bg-white/10 backdrop-blur-md p-8 rounded-xl shadow-lg border border-white/20">
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">Kisah Kita</h3>
             <p className="text-gray-300 md:text-lg leading-relaxed">
-              Di antara ribuan detik waktu yang berlalu, ada serpihan-serpihan kenangan yang takkan pernah pudar—setiap gambar di atas adalah saksi bisu dari tawa yang menggemakan kebahagiaan, pelukan yang menghangatkan jiwa, dan momen-momen kecil yang justru menjadi harta paling berharga dalam perjalanan kita bersama. 
-              Inilah mozaik kisah kita, terukir dalam warna-warna senja yang sama, dalam langkah-langkah yang beriringan, dan dalam diam-diam yang selalu terasa nyaman. Setiap senyuman yang terabadikan bukan sekadar gambar, melainkan cerita yang hidup—cerita tentang bagaimana kita saling menemukan, saling menguatkan, dan saling melengkapi di tengah hingar-bingar dunia yang tak pernah berhenti berputar.  
-              Mari kita terus menulis bab-bab baru dengan tinta yang lebih berwarna, dengan hati yang tetap sama: penuh syukur, penuh cinta, dan penuh harap. Karena di setiap helaan napas, di setiap langkah yang kita jejakkan bersama, ada kesempatan untuk menciptakan momen yang nantinya akan kita kenang dengan rindu yang manis.  
-              Semoga waktu tak pernah mengikis kehangatan ini, semoga jarak tak pernah memudarkan makna kita, dan semoga kisah kita—yang penuh dengan bahtera harapan dan lautan ketulusan—terus mengalir seperti sungai yang tak pernah kering, mengalir hingga ke samudra keabadian.  
-              Bersamamu, setiap detik adalah halaman baru yang ingin kusimpan rapat-rapat dalam lembaran hidupku. Mari kita lanjutkan perjalanan ini, dengan lebih banyak cerita, lebih banyak tawa, dan lebih banyak cinta yang akan kita kenang selamanya.
-              <b>— Karena yang terindah tak selalu tentang bagaimana kisah dimulai, tapi tentang bagaimana kita memilih untuk terus menulisnya, bersama.</b>💫
+              Setiap momen yang kita abadikan adalah bagian dari kisah kita. Dari tawa hingga air mata, dari suka hingga duka, semuanya membentuk ikatan yang tak tergantikan. Mari kita terus menciptakan kenangan baru dan merayakan perjalanan ini bersama.
             </p>
           </div>
         </motion.div>
