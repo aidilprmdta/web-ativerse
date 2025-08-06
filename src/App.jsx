@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { AnimatePresence, motion } from "framer-motion";
 
+// Component imports
 import WelcomeScreen from "./components/WelcomeScreen";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
@@ -11,20 +12,30 @@ import Galeri from "./components/Galeri";
 import Komentar from "./components/Komentar";
 import Footer from "./components/Footer";
 import MemberGallery from "./components/MemberGalery";
-import InstrumentsList from "./components/InstrumentsList";
+import ScrollToTop from "./components/ScrollToTop";
+import Loading from "./components/Loading";
 
 function App() {
   const [showWelcome, setShowWelcome] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
     document.body.style.overflowX = "hidden";
+
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1500);
+
+    return () => clearTimeout(timer);
   }, []);
 
   return (
     <div className="font-sans scroll-smooth overflow-x-hidden bg-white text-gray-900">
       <AnimatePresence mode="wait">
-        {showWelcome ? (
+        {isLoading ? (
+          <Loading key="loading" />
+        ) : showWelcome ? (
           <motion.div
             key="welcome"
             initial={{ opacity: 0 }}
@@ -42,7 +53,9 @@ function App() {
             exit={{ opacity: 0 }}
             transition={{ duration: 1 }}
           >
+            <ScrollToTop />
             <Navbar />
+
             <main className="bg-gradient-to-b from-white via-pink-50 to-purple-100">
               <section id="home" className="w-full overflow-x-hidden">
                 <Home />
@@ -50,7 +63,7 @@ function App() {
               <section id="about" className="w-full overflow-x-hidden">
                 <About />
               </section>
-              <section id="MemberGallery" className="w-full overflow-x-hidden">
+              <section id="member-gallery" className="w-full overflow-x-hidden">
                 <MemberGallery />
               </section>
               <section id="galeri" className="w-full overflow-x-hidden">
@@ -59,13 +72,8 @@ function App() {
               <section id="komentar" className="w-full overflow-x-hidden">
                 <Komentar />
               </section>
-              <section id="instruments" className="py-10 px-4">
-                <h2 className="text-2xl font-bold text-center mb-4">
-                  Daftar Instrumen
-                </h2>
-                <InstrumentsList />
-              </section>
             </main>
+
             <Footer />
           </motion.div>
         )}
