@@ -37,9 +37,9 @@ const members = [
     github: "https://github.com/aidilprmdta",
   },
   {
-    name: "Aidil",
+    name: "Bunda & Papi",
     role: "Ketua Ativerse",
-    image: "https://dl.dropboxusercontent.com/scl/fi/w0pldr3msv4vu3pb4qbzb/Aidil.JPG?rlkey=puyfp0s9ue7ize1v2bxi4nitx",
+    image: "https://dl.dropboxusercontent.com/scl/fi/1cx3bvynuxubi1p9xgloi/IMG-20250224-WA0424.jpg?rlkey=4sycoy0teoi0xxpvwm70t4u5a",
     instagram: "https://instagram.com/aidilprmdta",
     linkedin: "https://linkedin.com/in/aidilprmdta",
     github: "https://github.com/aidilprmdta",
