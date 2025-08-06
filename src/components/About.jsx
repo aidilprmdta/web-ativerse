@@ -144,7 +144,7 @@ export default function About() {
                 "https://dl.dropboxusercontent.com/scl/fi/bdnkxfjqq06p435qnhkkc/IMG-20250224-WA0402.jpg?rlkey=i64p0u5s4szvgzny1spakx8ag",
                 "https://dl.dropboxusercontent.com/scl/fi/y49lqq93qrtctdmmrnvl6/IMG-20241114-WA0172.jpg?rlkey=y7wgpbirnjth5qm0j46hhvvhk",
                 "https://dl.dropboxusercontent.com/scl/fi/tssajeyxmg1p3jsmuxk8b/IMG-20241007-WA0011.jpg?rlkey=t1yym57rihkhptyawlmmt620z",
-                "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
+                "https://dl.dropboxusercontent.com/scl/fi/1cx3bvynuxubi1p9xgloi/IMG-20250224-WA0424.jpg?rlkey=4sycoy0teoi0xxpvwm70t4u5a",
               ].map((src, index) => (
                 <motion.div
                   key={index}
