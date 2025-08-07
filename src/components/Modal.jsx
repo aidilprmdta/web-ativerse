@@ -4,7 +4,7 @@ export default function Modal({ children, onClose }) {
       <div className="bg-zinc-900 p-6 rounded-2xl w-full max-w-md relative">
         <button
           onClick={onClose}
-          className="absolute top-2 right-3 text-white text-2xl"
+          className="absolute top-2 right-5 text-white text-2xl"
         >
           &times;
         </button>
