@@ -179,7 +179,7 @@ const chunkArray = (arr, size) => {
 export default function MemberGallery() {
   const [selected, setSelected] = useState(null);
   const [page, setPage] = useState(0);
-  const membersPerPage = 4;
+  const membersPerPage = 5;
 
   const slides = chunkArray(members, membersPerPage);
   const currentSlide = slides[page];
@@ -211,7 +211,12 @@ export default function MemberGallery() {
           />
         ))}
       </div>
-
+      <div className="container mx-auto px-4 relative z-10">
+        <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-300 mb-4 text-center">
+            Members Ativerse
+        </h2>
+      <div className="w-80 h-1 bg-gradient-to-r from-purple-400 to-pink-300 mx-auto mb-6 rounded-full"></div>
+      </div>
       <div className="py-10 px-4 text-center">
         <AnimatePresence mode="wait">
           <motion.div
@@ -220,7 +225,7 @@ export default function MemberGallery() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -50 }}
             transition={{ duration: 0.5 }}
-            className="flex justify-center gap-6"
+            className="flex justify-center gap-4"
           >
             {currentSlide.map((member, index) => (
               <motion.div
@@ -262,13 +267,17 @@ export default function MemberGallery() {
       {selected && (
         <Modal onClose={() => setSelected(null)}>
           <div className="p-6">
-            <img
-              src={selected.image}
-              alt={selected.name}
-              className="rounded-xl mb-2 w-400 h-100 object-cover"
-            />
-            <h3 className="text-sm text-gray-300">{selected.role}</h3>
-            <h1 className="text-2xl font-bold text-white">{selected.name}</h1>
+            <div className="relative">
+              <img
+                src={selected.image}
+                alt={selected.name}
+                className="rounded-xl object-cover w-full h-[400px]"
+              />
+              <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent">
+                <h3 className="text-sm text-white">{selected.role}</h3>
+                <h1 className="text-2xl font-bold text-white">{selected.name}</h1>
+              </div>
+            </div>
             <a
               href={selected.instagram}
               target="_blank"
