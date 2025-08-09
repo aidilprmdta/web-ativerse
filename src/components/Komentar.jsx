@@ -276,7 +276,7 @@ export default function Komentar() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <div className="bg-white/10 p-6 rounded-3xl shadow-2xl border border-white/20 h-[570px] flex flex-col">
+          <div className="bg-white/10 p-6 rounded-3xl shadow-2xl border border-white/20 h-[500px] flex flex-col">
             <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">
               <FaHeart className="text-pink-400" />
               Komentar Terbaru
