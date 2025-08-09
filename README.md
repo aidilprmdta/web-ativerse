@@ -30,7 +30,6 @@ Web Ativerse adalah website single-page (SPA) interaktif untuk kelas yang menamp
    ```bash
    git clone https://github.com/aidilprmdta/web-ativerse.git
    cd web-ativerse
-````
 
 2. Install dependencies:
 
