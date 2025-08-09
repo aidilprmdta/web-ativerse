@@ -182,7 +182,12 @@ export default function Komentar() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="text-4xl md:text-5xl font-bold mb-4">Komentar</h2>
+      <div className="container mx-auto px-4 relative z-10">
+        <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-300 mb-4 text-center">
+            Komentar
+        </h2>
+      <div className="w-40 h-1 bg-gradient-to-r from-purple-400 to-pink-300 mx-auto mb-6 rounded-full"></div>
+      </div>
         <p className="text-lg text-pink-200 max-w-2xl mx-auto">
           Berikan pendapatmu dan lihat apa kata mereka tentang Ativerse
         </p>
