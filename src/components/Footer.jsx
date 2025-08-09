@@ -3,29 +3,29 @@ import {
   FaUserFriends, 
   FaImages, 
   FaCommentAlt,
-  FaFacebook, 
   FaInstagram, 
   FaLinkedin, 
   FaYoutube,
-  FaTwitter,
+  FaGithub,
   FaEnvelope,
-  FaHeart
+  FaHeart,
+  FaTiktok
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 export default function Footer() {
   const year = new Date().getFullYear();
   const socialLinks = [
-    { icon: <FaFacebook />, url: "#", label: "Facebook" },
+    { icon: <FaTiktok />, url: "https://www.tiktok.com/@_sky.mv", label: "Tiktok" },
     { icon: <FaInstagram />, url: "https://www.instagram.com/aidil.prmdta/", label: "Instagram" },
-    { icon: <FaTwitter />, url: "#", label: "Twitter" },
+    { icon: <FaGithub />, url: "https://github.com/aidilprmdta", label: "Github" },
     { icon: <FaLinkedin />, url: "https://www.linkedin.com/in/aidilprmdta/", label: "LinkedIn" },
-    { icon: <FaYoutube />, url: "#", label: "YouTube" },
+    { icon: <FaYoutube />, url: "https://www.youtube.com/@AidilTipi", label: "YouTube" },
     { icon: <FaEnvelope />, url: "mailto:pramadytaa@gmail.com", label: "Email" }
   ];
   
   const quickLinks = [
-    { icon: <FaHome />, label: "Home", url: "#" },
+    { icon: <FaHome />, label: "Home", url: "#home" },
     { icon: <FaUserFriends />, label: "About", url: "#about" },
     { icon: <FaImages />, label: "Galeri", url: "#gallery" },
     { icon: <FaCommentAlt />, label: "Komentar", url: "#comments" }
