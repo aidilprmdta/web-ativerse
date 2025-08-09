@@ -77,5 +77,3 @@ Kontribusi terbuka untuk siapa pun. Silakan fork dan pull request!
 ## 📄 Lisensi
 
 MIT License © 2025 [Aidil Pramadita Putra](https://github.com/aidilprmdta)
-
-```
