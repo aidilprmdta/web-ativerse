@@ -215,7 +215,7 @@ export default function MemberGallery() {
         <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-300 mb-4 text-center">
             Members Ativerse
         </h2>
-      <div className="w-80 h-1 bg-gradient-to-r from-purple-400 to-pink-300 mx-auto mb-6 rounded-full"></div>
+      <div className="w-60 h-1 bg-gradient-to-r from-purple-400 to-pink-300 mx-auto mb-6 rounded-full"></div>
       </div>
       <div className="py-10 px-4 text-center">
         <AnimatePresence mode="wait">
