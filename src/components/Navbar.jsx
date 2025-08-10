@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
@@ -6,14 +6,68 @@ import { Menu, X } from "lucide-react";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
+  const menuButtonRef = useRef(null);
+  const firstLinkRef = useRef(null);
+  const menuLinksRef = useRef([]); // optional if mau fokus ke tiap link
   const menuItems = ["home", "about", "galeri", "komentar"];
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // helper untuk mencegah touch scroll di mobile ketika menu terbuka
+  useEffect(() => {
+    const preventDefault = (e) => e.preventDefault();
+    if (isOpen) {
+      // kompensasi padding-right supaya layout tidak bergeser ketika scrollbar hilang
+      const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+      if (scrollbarWidth > 0) {
+        document.body.style.paddingRight = `${scrollbarWidth}px`;
+      }
+      // lock scroll
+      document.body.style.overflow = "hidden";
+
+      // mencegah touchmove (iOS/Android)
+      document.addEventListener("touchmove", preventDefault, { passive: false });
+
+      // fokus ke link pertama
+      setTimeout(() => {
+        firstLinkRef.current?.focus();
+      }, 50);
+    } else {
+      // restore
+      document.body.style.overflow = "";
+      document.body.style.paddingRight = "";
+      document.removeEventListener("touchmove", preventDefault, { passive: false });
+      // kembalikan fokus ke tombol menu
+      menuButtonRef.current?.focus();
+    }
+
+    // cleanup jika komponen unmount
+    return () => {
+      document.body.style.overflow = "";
+      document.body.style.paddingRight = "";
+      document.removeEventListener("touchmove", preventDefault, { passive: false });
+    };
+  }, [isOpen]);
+
+  // tutup saat tekan ESC
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.key === "Escape") setIsOpen(false);
+    };
+    if (isOpen) document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [isOpen]);
+
+  // helper: klik link lalu scroll + tutup menu
+  const handleLinkClick = (to) => {
+    setIsOpen(false);
+    // animateScroll atau react-scroll handle the scroll via Link itself,
+    // so no need to call scroll.scrollTo here — Link will do smooth scroll.
+  };
 
   return (
     <motion.nav
@@ -56,17 +110,15 @@ export default function Navbar() {
 
         {/* Mobile Menu Icon */}
         <motion.button
-          onClick={() => setIsOpen(!isOpen)}
+          ref={menuButtonRef}
+          onClick={() => setIsOpen((v) => !v)}
           className="md:hidden p-2 rounded-full focus:outline-none"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           aria-label="Toggle Menu"
+          aria-expanded={isOpen}
         >
-          {isOpen ? (
-            <X size={28} className="text-white" />
-          ) : (
-            <Menu size={28} className="text-white" />
-          )}
+          {isOpen ? <X size={28} className="text-white" /> : <Menu size={28} className="text-white" />}
         </motion.button>
       </div>
 
@@ -74,21 +126,30 @@ export default function Navbar() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="fixed inset-0 bg-gradient-to-br from-purple-900/95 to-indigo-900/95 backdrop-blur-lg flex flex-col items-center justify-center space-y-10 z-40"
+            // full screen overlay, non-scrollable
+            className="fixed inset-0 h-screen bg-gradient-to-br from-purple-900/95 to-indigo-900/95 backdrop-blur-lg flex flex-col items-center justify-center space-y-10 z-60 overflow-hidden"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
+            aria-modal="true"
+            role="dialog"
           >
-            {menuItems.map((item) => (
+            {menuItems.map((item, idx) => (
               <Link
                 key={item}
                 to={item}
                 smooth
                 duration={500}
                 offset={-80}
-                onClick={() => setIsOpen(false)}
-                className="text-2xl font-semibold text-white hover:text-pink-300 transition-colors"
+                onClick={() => handleLinkClick(item)}
+                // buat fokus bisa diarahkan
+                tabIndex={0}
+                ref={(el) => {
+                  menuLinksRef.current[idx] = el;
+                  if (idx === 0) firstLinkRef.current = el;
+                }}
+                className="text-2xl font-semibold text-white hover:text-pink-300 transition-colors focus:outline-none"
               >
                 {item.charAt(0).toUpperCase() + item.slice(1)}
               </Link>
