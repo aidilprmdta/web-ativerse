@@ -115,7 +115,7 @@ export default function About() {
                     whileTap={{ scale: 0.95 }}
                   >
                     <span>Lihat Galeri</span>
-                    <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 ml-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                     </svg>
                   </motion.button>
@@ -149,12 +149,12 @@ export default function About() {
                 <motion.div
                   key={index}
                   className="relative overflow-hidden"
-                  whileHover={{ scale: 1.03 }}
+                  whileHover={{ scale: 1.05 }}  
                 >
                   <img
                     src={src}
                     alt={`Team moment ${index + 1}`}
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover rounded-lg transition-transform duration-500"
                   />
                   {index === 3 && (
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
