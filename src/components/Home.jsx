@@ -8,7 +8,7 @@ export default function Home() {
       <motion.div
         className="absolute inset-0 z-0"
         animate={{
-          scale: [1, 1.1, 1]
+          scale: [2, 2, 2],
         }}
         transition={{
           duration: 20,
@@ -19,7 +19,7 @@ export default function Home() {
         <img
           src="https://dl.dropboxusercontent.com/scl/fi/2n59vsa18fufx3sgx81rq/IMG-20250224-WA0482.jpg?rlkey=4rdf6bkv81h0k5tre2jk5lzey" // Replace with your image path
           alt="Background"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover partial-blur opacity-50"
         />
         <div className="absolute inset-0 bg-black/80 backdrop-blur-[1px]" />
       </motion.div>
@@ -55,13 +55,13 @@ export default function Home() {
         >
           <a
             href="#galeri"
-            className="bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-full flex items-center gap-2 transition shadow-md hover:shadow-lg"
+            className="bg-pink-500 hover:bg-pink-800 text-white px-6 py-3 rounded-full flex items-center gap-2 transition shadow-md hover:shadow-lg"
           >
             Lihat Galeri <ArrowRight size={18} />
           </a>
           <a
             href="#komentar"
-            className="bg-purple-500 hover:bg-purple-600 text-white px-6 py-3 rounded-full flex items-center gap-2 transition shadow-md hover:shadow-lg"
+            className="bg-purple-500 hover:bg-purple-800 text-white px-6 py-3 rounded-full flex items-center gap-2 transition shadow-md hover:shadow-lg"
           >
             Tinggalkan Komentar <ArrowRight size={18} />
           </a>
