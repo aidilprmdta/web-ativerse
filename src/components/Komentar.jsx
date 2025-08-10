@@ -186,7 +186,7 @@ export default function Komentar() {
         <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-300 mb-4 text-center">
             Komentar
         </h2>
-      <div className="w-40 h-1 bg-gradient-to-r from-purple-400 to-pink-300 mx-auto mb-6 rounded-full"></div>
+      <div className="w-30 h-1 bg-gradient-to-r from-purple-400 to-pink-300 mx-auto mb-6 rounded-full"></div>
       </div>
         <p className="text-lg text-pink-200 max-w-2xl mx-auto">
           Berikan pendapatmu dan lihat apa kata mereka tentang Ativerse
