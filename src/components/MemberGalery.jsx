@@ -180,7 +180,10 @@ export default function MemberGallery() {
   const [selected, setSelected] = useState(null);
   const [page, setPage] = useState(0);
   const membersPerPage = 5;
+  const onClose = () => setSelected(null);
 
+  // Membagi anggota menjadi halaman
+  if (members.length === 0) return <div className="text-center text-white">Tidak ada anggota yang tersedia.</div>;
   const slides = chunkArray(members, membersPerPage);
   const currentSlide = slides[page];
 
@@ -266,15 +269,14 @@ export default function MemberGallery() {
 
       {selected && (
         <Modal onClose={() => setSelected(null)}>
-          <div className="p-6">
             <div className="relative">
               <img
                 src={selected.image}
                 alt={selected.name}
-                className="rounded-xl object-cover w-full h-[400px]"
+                className="w-full h-[400px] object-cover"
               />
               <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent">
-                <h3 className="text-sm text-white">{selected.role}</h3>
+                <h3 className="text-sm text-white opacity-80">{selected.role}</h3>
                 <h1 className="text-2xl font-bold text-white">{selected.name}</h1>
               </div>
             </div>
@@ -302,7 +304,7 @@ export default function MemberGallery() {
             >
               <Github size={18} /> Follow On Github
             </a>
-          </div>
+      
         </Modal>
       )}
       </ section>
