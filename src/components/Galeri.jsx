@@ -106,7 +106,7 @@ export default function GaleriDanKomentar() {
             <div className="max-w-3xl mx-auto text-center bg-white/10 backdrop-blur-md p-8 rounded-xl shadow-lg border border-white/20">
               <h3 className="text-3xl font-bold text-white mb-3">Kisah Kita</h3>
               <p className="text-gray-300 leading-relaxed">
-                Setiap momen yang kita abadikan adalah bagian dari kisah kita.
+                Setiap momen yang kita abadikan adalah bagian dari kisah kita. Kami mengabadikan setiap detik, merangkai cerita dalam setiap detik, dan mengabadikan momen-momen berharga yang takkan pernah pudar.
               </p>
             </div>
           </motion.div>
