@@ -22,7 +22,6 @@ Web Ativerse adalah website single-page (SPA) interaktif untuk kelas yang menamp
 - [AOS (Animate On Scroll)](https://michalsnik.github.io/aos/)
 - [Supabase](https://supabase.com/) – Database & Auth
 - [Lucide Icons](https://lucide.dev/)
-- [React Bits](https://react-bits.dev/) – UI Elements
 
 ## 🧑‍💻 Instalasi Lokal
 
@@ -60,7 +59,7 @@ Web Ativerse adalah website single-page (SPA) interaktif untuk kelas yang menamp
 
 ## 📷 Preview
 
-![Preview](preview-image-url.png) <!-- Ganti dengan screenshot proyek -->
+![Preview](https://github.com/aidilprmdta/porto-two-site/blob/main/image.png?raw=true) <!-- Ganti dengan screenshot proyek -->
 
 ## 📌 Catatan
 
