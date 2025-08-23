@@ -57,21 +57,21 @@ function App() {
             <Navbar />
 
             <main className="bg-gradient-to-b from-white via-pink-50 to-purple-100">
-              <section id="home" className="w-full overflow-x-hidden">
+              <div id="home" className="w-full overflow-x-hidden">
                 <Home />
-              </section>
-              <section id="about" className="w-full overflow-x-hidden">
+              </div>
+              <div id="about" className="w-full overflow-x-hidden">
                 <About />
-              </section>
-              <section id="member-gallery" className="w-full overflow-x-hidden">
+              </div>
+              <div id="member-gallery" className="w-full overflow-x-hidden">
                 <MemberGallery />
-              </section>
-              <section id="galeri" className="w-full overflow-x-hidden">
+              </div>
+              <div id="galeri" className="w-full overflow-x-hidden">
                 <Galeri />
-              </section>
-              <section id="komentar" className="w-full overflow-x-hidden">
+              </div>
+              <div id="komentar" className="w-full overflow-x-hidden">
                 <Komentar />
-              </section>
+              </div>
             </main>
 
             <Footer />

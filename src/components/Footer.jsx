@@ -57,28 +57,6 @@ export default function Footer() {
             </p>
           </motion.div>
 
-          {/* Quick Links */}
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-          >
-            <h4 className="text-lg font-semibold mb-4 text-gray-200">Navigasi Cepat</h4>
-            <ul className="space-y-3">
-              {quickLinks.map((link, index) => (
-                <li key={index}>
-                  <a 
-                    href={link.url} 
-                    className="flex items-center text-gray-400 hover:text-pink-400 transition-colors"
-                  >
-                    <span className="mr-2">{link.icon}</span>
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
-
           {/* Contact Info */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}

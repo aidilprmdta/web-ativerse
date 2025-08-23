@@ -3,7 +3,7 @@ import { FaHeart, FaUsers, FaLightbulb, FaHandsHelping } from "react-icons/fa";
 
 export default function About() {
   return (
-    <section className="relative py-20 overflow-hidden bg-gradient-to-br from-purple-900 via-indigo-800 to-pink-800">
+    <div className="relative py-20 overflow-hidden bg-gradient-to-br from-purple-900 via-indigo-800 to-pink-800">
       {/* Floating Background Elements */}
       <div className="absolute inset-0 overflow-hidden opacity-20">
         {[...Array(15)].map((_, i) => (
@@ -210,6 +210,6 @@ export default function About() {
           </div>
         </motion.div>
       </div>
-    </section>
+    </div>
   );
 }
