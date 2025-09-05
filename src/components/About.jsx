@@ -110,16 +110,6 @@ export default function About() {
                 {/* Buttons */}
                 <div className="flex flex-wrap gap-4">
                   <motion.button
-                    className="px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full font-medium shadow-lg hover:shadow-xl transition-all flex items-center"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <span>Lihat Galeri</span>
-                    <svg className="w-5 h-5 ml-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                    </svg>
-                  </motion.button>
-                  <motion.button
                     className="px-6 py-3 bg-white/20 border-2 border-purple-300 text-white rounded-full font-medium shadow-lg hover:shadow-xl transition-all flex items-center"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
