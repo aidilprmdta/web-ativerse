@@ -13,15 +13,15 @@ const members = [
     github: "https://github.com/aidilprmdta",
   },
   {
-    name: "Andhika",
-    role: "Ketua Ativerse",
+    name: "Lupi",
+    role: "Babu Ativerse",
     image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
     instagram: "https://instagram.com/andhikapratama",
     linkedin: "https://linkedin.com/in/aidilprmdta",
     github: "https://github.com/aidilprmdta",
   },
   {
-    name: "Rifqi",
+    name: "Kijul",
     role: "Babu Ativerse",
     image: "https://dl.dropboxusercontent.com/scl/fi/339p46ji73z25gylhnphu/IMG-20241125-WA0131.jpg?rlkey=5lowmypjggdc5xvezhj2qbcqn",
     instagram: "https://instagram.com/aidilprmdta",
@@ -30,31 +30,25 @@ const members = [
     name: "Hafizh",
     role: "Admin Ativerse",
     image: "https://dl.dropboxusercontent.com/scl/fi/7vixawlo5toyg823ocshl/IMG-20241125-WA0126.jpg?rlkey=4gnib6tx1m0iv8qqmxo6hqhp4",
-    instagram: "https://instagram.com/hafizhrai_",
+    instagram: "https://instagram.com/hafizhrai_"
   },
   {
     name: "Bunda & Papi",
     role: "Ketua Ativerse",
     image: "https://dl.dropboxusercontent.com/scl/fi/1cx3bvynuxubi1p9xgloi/IMG-20250224-WA0424.jpg?rlkey=4sycoy0teoi0xxpvwm70t4u5a",
     instagram: "https://instagram.com/aidilprmdta",
-    linkedin: "https://linkedin.com/in/aidilprmdta",
-    github: "https://github.com/aidilprmdta",
   },
   {
     name: "Hafy",
     role: "Ketua Ativerse",
     image: "https://dl.dropboxusercontent.com/scl/fi/ieh7a328rpq58bw7shkjg/IMG_2650.JPG?rlkey=hbuookjwzth6kmwu1ofg5pez9",
     instagram: "https://instagram.com/aidilprmdta",
-    linkedin: "https://linkedin.com/in/aidilprmdta",
-    github: "https://github.com/aidilprmdta",
   },
   {
     name: "Ramadhan",
     role: "Ketua Ativerse",
     image: "https://dl.dropboxusercontent.com/scl/fi/w0pldr3msv4vu3pb4qbzb/Aidil.JPG?rlkey=puyfp0s9ue7ize1v2bxi4nitx",
     instagram: "https://instagram.com/aidilprmdta",
-    linkedin: "https://linkedin.com/in/aidilprmdta",
-    github: "https://github.com/aidilprmdta",
   },
   {
     name: "Aidil",
@@ -168,8 +162,6 @@ const members = [
     linkedin: "https://linkedin.com/in/aidilprmdta",
     github: "https://github.com/aidilprmdta",
   },
-
-  // Tambahkan anggota lain...
 ];
 
 const chunkArray = (arr, size) => {
