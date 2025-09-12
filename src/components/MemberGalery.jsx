@@ -21,10 +21,12 @@ const members = [
     github: "https://github.com/aidilprmdta",
   },
   {
-    name: "Kijul",
-    role: "Babu Ativerse",
+    name: "Rifqi",
+    role: "Panglima Tempur Ativerse+",
     image: "https://dl.dropboxusercontent.com/scl/fi/339p46ji73z25gylhnphu/IMG-20241125-WA0131.jpg?rlkey=5lowmypjggdc5xvezhj2qbcqn",
-    instagram: "https://instagram.com/aidilprmdta",
+    instagram: "https://instagram.com/jujulianrifqi",
+    linkedin: "https://linkedin.com/in/rifqijulian",
+    github: "https://github.com/rifqijulian"  
   },
   {
     name: "Hafizh",
@@ -36,7 +38,7 @@ const members = [
     name: "Bunda & Papi",
     role: "Ketua Ativerse",
     image: "https://dl.dropboxusercontent.com/scl/fi/1cx3bvynuxubi1p9xgloi/IMG-20250224-WA0424.jpg?rlkey=4sycoy0teoi0xxpvwm70t4u5a",
-    instagram: "https://instagram.com/aidilprmdta",
+    instagram: "https://instagram.com/aidilprmdta"
   },
   {
     name: "Hafy",
