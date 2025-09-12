@@ -5,7 +5,7 @@ Web Ativerse adalah website single-page (SPA) interaktif untuk kelas yang menamp
 
 ## 🚀 Fitur Utama
 
-- ✨ **Welcome Screen** interaktif seperti [eki.my.id](https://eki.my.id)
+- ✨ **Welcome Screen** interaktif
 - 📄 SPA (Single Page Application) – Navigasi tanpa reload
 - 💬 Komentar langsung tampil setelah dikirim
 - 🖼️ Galeri dengan upload gambar & preview modal
