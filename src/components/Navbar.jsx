@@ -106,7 +106,7 @@ export default function Navbar() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="fixed inset-0 h-screen bg-gradient-to-b from-gray-900/95 to-indigo-900/95 backdrop-blur-lg z-40 flex flex-col"
+            className="fixed inset-0 h-screen bg-gradient-to-b from-black-900/95 to-indigo-900/95 backdrop-blur-lg z-40 flex flex-col"
             initial={{ opacity: 0, x: "100%" }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}

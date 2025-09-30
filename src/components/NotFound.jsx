@@ -46,7 +46,7 @@ const NotFoundPage = () => {
         }}
       />
       <motion.div 
-        className="absolute bottom-32 right-24 w-24 h-24 rounded-full bg-pink-600 opacity-20"
+        className="absolute bottom-32 right-24 w-24 h-24 rounded-full bg-gray-600 opacity-20"
         animate={{
           scale: [1, 1.8, 1],
           opacity: [0.2, 0.4, 0.2]
@@ -67,7 +67,7 @@ const NotFoundPage = () => {
           transition={{ duration: 0.8 }}
           className="mb-8"
         >
-          <h1 className="text-9xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-yellow-300">
+          <h1 className="text-9xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-gray-400 to-yellow-300">
             404
           </h1>
           <h2 className="text-3xl md:text-4xl font-bold mb-6" data-aos="fade-up">
@@ -131,9 +131,9 @@ const NotFoundPage = () => {
             <input
               type="text"
               placeholder="Cari sesuatu..."
-              className="w-full px-4 py-3 rounded-full bg-purple-800 bg-opacity-50 border border-purple-600 focus:outline-none focus:ring-2 focus:ring-pink-400 text-white placeholder-purple-300"
+              className="w-full px-4 py-3 rounded-full bg-purple-800 bg-opacity-50 border border-purple-600 focus:outline-none focus:ring-2 focus:ring-gray-400 text-white placeholder-purple-300"
             />
-            <button className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-pink-500 text-white p-2 rounded-full hover:bg-pink-600 transition-all">
+            <button className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-500 text-white p-2 rounded-full hover:bg-gray-600 transition-all">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"

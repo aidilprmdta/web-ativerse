@@ -48,7 +48,7 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          Selamat Datang di <span className="text-pink-300">Ativerse</span>
+          Selamat Datang di <span className="text-gray-400">Ativerse</span>
         </motion.h1>
 
         {/* Description */}
