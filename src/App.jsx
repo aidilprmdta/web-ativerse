@@ -58,7 +58,7 @@ function App() {
             <ScrollToTop />
             <Navbar />
 
-            <main className="bg-gradient-to-b from-white via-pink-50 to-gray-100">
+            <main className="bg-gradient-to-b from-white via-white-50 to-gray-100">
               <div id="home" className="w-full overflow-x-hidden">
                 <Home />
               </div>
