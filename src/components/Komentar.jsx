@@ -175,7 +175,7 @@ export default function Komentar() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-900 via-fuchsia-800 to-pink-700 py-16 px-4 sm:px-6 text-white">
+    <div className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black py-16 px-4 sm:px-6 text-white">
       <motion.div 
         className="text-center mb-16"
         initial={{ opacity: 0, y: -20 }}
@@ -183,12 +183,12 @@ export default function Komentar() {
         transition={{ duration: 0.6 }}
       >
       <div className="container mx-auto px-4 relative z-10">
-        <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-300 mb-4 text-center">
+        <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-white mb-4 text-center">
             Komentar
         </h2>
-      <div className="w-30 h-1 bg-gradient-to-r from-purple-400 to-pink-300 mx-auto mb-6 rounded-full"></div>
+      <div className="w-30 h-1 bg-white mx-auto mb-6 rounded-full"></div>
       </div>
-        <p className="text-lg text-pink-200 max-w-2xl mx-auto">
+        <p className="text-lg text-gray-200 max-w-2xl mx-auto">
           Berikan pendapatmu dan lihat apa kata mereka tentang Ativerse
         </p>
       </motion.div>
@@ -205,7 +205,7 @@ export default function Komentar() {
             className="bg-white/10 p-6 rounded-3xl shadow-2xl backdrop-blur-md border border-white/20 space-y-6"
           >
             <h3 className="text-2xl font-bold flex items-center gap-2">
-              <FaComment className="text-pink-400" />
+              <FaComment className="text-white" />
               Tinggalkan Komentar
             </h3>
 
@@ -216,7 +216,7 @@ export default function Komentar() {
             )}
 
             <div className="space-y-1">
-              <label className="block text-sm font-medium text-pink-100 flex items-center gap-1">
+              <label className="block text-sm font-medium text-gray-100 flex items-center gap-1">
                 <FaUser className="text-xs" />
                 Nama Kamu
               </label>
@@ -226,7 +226,7 @@ export default function Komentar() {
                 value={form.nama}
                 onChange={handleChange}
                 placeholder="Masukkan nama"
-                className="w-full p-4 rounded-xl bg-white/15 text-white placeholder:text-white/60 border border-white/30 focus:outline-none focus:ring-2 focus:ring-pink-400 focus:border-transparent transition-all"
+                className="w-full p-4 rounded-xl bg-white/15 text-white placeholder:text-white/60 border border-white/30 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent transition-all"
                 required
                 maxLength={50}
               />
@@ -241,7 +241,7 @@ export default function Komentar() {
                 value={form.pesan}
                 onChange={handleChange}
                 placeholder="Tuliskan pesan disini..."
-                className="w-full p-4 h-40 rounded-xl bg-white/15 text-white placeholder:text-white/60 border border-white/30 focus:outline-none focus:ring-2 focus:ring-pink-400 focus:border-transparent transition-all resize-none"
+                className="w-full p-4 h-40 rounded-xl bg-white/15 text-white placeholder:text-white/60 border border-white/30 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent transition-all resize-none"
                 required
                 maxLength={500}
               />
@@ -252,7 +252,7 @@ export default function Komentar() {
 
             <motion.button
               type="submit"
-              className="w-full group relative overflow-hidden bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 py-4 rounded-xl font-bold shadow-lg transition-all disabled:opacity-70 disabled:cursor-not-allowed"
+              className="w-full group relative overflow-hidden bg-gradient-to-r from-black-500 to-gray-600 hover:from-gray-600 hover:to-black-700 py-4 rounded-xl font-bold shadow-lg transition-all disabled:opacity-70 disabled:cursor-not-allowed"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               disabled={isSubmitting}
@@ -270,7 +270,7 @@ export default function Komentar() {
                   </>
                 )}
               </span>
-              <span className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+              <span className="absolute inset-0 bg-gradient-to-r from-black-600 to-gray-500 opacity-0 group-hover:opacity-100 transition-opacity"></span>
             </motion.button>
           </form>
         </motion.div>
@@ -283,14 +283,14 @@ export default function Komentar() {
         >
           <div className="bg-white/10 p-6 rounded-3xl shadow-2xl border border-white/20 h-[500px] flex flex-col">
             <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">
-              <FaHeart className="text-pink-400" />
+              <FaHeart className="text-white" />
               Komentar Terbaru
             </h3>
             
             <div className="space-y-4 overflow-y-auto pr-2 flex-grow">
               {isLoading ? (
                 <div className="flex justify-center items-center h-full">
-                  <FaSpinner className="animate-spin text-2xl text-pink-400" />
+                  <FaSpinner className="animate-spin text-2xl text-gray-400" />
                 </div>
               ) : (
                 <>
@@ -335,7 +335,7 @@ export default function Komentar() {
                         transition={{ duration: 0.4, delay: i * 0.1 }}
                       >
                         <div className="flex items-start gap-3">
-                          <div className="bg-pink-500/20 p-2 rounded-full text-pink-300">
+                          <div className="bg-gray-500/20 p-2 rounded-full text-gray-300">
                             <FaUser className="w-5 h-5" />
                           </div>
                           <div className="flex-grow">
@@ -347,7 +347,7 @@ export default function Komentar() {
                             </div>
                             <p className="mt-2 text-white/90 whitespace-pre-line">{k.pesan}</p>
                             <button 
-                              className="mt-3 text-xs flex items-center gap-1 text-pink-300 hover:text-pink-200 transition-colors"
+                              className="mt-3 text-xs flex items-center gap-1 text-gray-300 hover:text-gray-200 transition-colors"
                               onClick={() => {
                                 setForm(prev => ({
                                   ...prev,

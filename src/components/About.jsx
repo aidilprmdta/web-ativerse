@@ -40,16 +40,16 @@ export default function About() {
           viewport={{ once: true }}
         >
           <motion.h2 
-            className="text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-300 mb-4"
+            className="text-7xl font-bold text-transparent bg-clip-text bg-white mb-4"
             initial={{ scale: 0.9 }}
             whileInView={{ scale: 1 }}
             transition={{ duration: 0.5 }}
           >
             24
           </motion.h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-300 mx-auto mb-6 rounded-full" />
+          <div className="w-24 h-1 bg-white mx-auto mb-6 rounded-full" />
           <h3 className="text-4xl font-bold text-white mb-3">Tentang Ativerse</h3>
-          <p className="text-xl text-pink-300 font-medium tracking-wider">
+          <p className="text-xl text-gray-300 font-medium tracking-wider">
             Little Family With Big Memories
           </p>
         </motion.div>
@@ -72,7 +72,7 @@ export default function About() {
                 viewport={{ once: true }}
               >
                 <h4 className="text-3xl font-bold text-white mb-8">
-                  Welcome To <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-pink-300">Ativerse</span>
+                  Welcome To <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-gray-300">Ativerse</span>
                 </h4>
                 
                 <div className="space-y-6 text-gray-200 mb-10">
@@ -82,7 +82,7 @@ export default function About() {
                   <p className="text-lg leading-relaxed">
                     Kerja dengan dedikasi, tumbuh bersama dalam suatu organisasi dan tercipta kekeluargaan. Inilah cerita kita!
                   </p>
-                  <p className="text-lg font-medium text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-pink-300">
+                  <p className="text-lg font-medium text-transparent bg-clip-text bg-white">
                     Ativerse - Where creativity meets technology
                   </p>
                 </div>
@@ -93,7 +93,7 @@ export default function About() {
                     className="bg-white/10 p-4 rounded-xl text-center backdrop-blur-sm border border-white/20"
                     whileHover={{ y: -5 }}
                   >
-                    <FaHeart className="text-pink-300 text-3xl mx-auto mb-2" />
+                    <FaHeart className="text-gray-300 text-3xl mx-auto mb-2" />
                     <p className="font-bold text-white">21+ Members</p>
                     <p className="text-sm text-gray-300">Dedicated Team</p>
                   </motion.div>
@@ -101,7 +101,7 @@ export default function About() {
                     className="bg-white/10 p-4 rounded-xl text-center backdrop-blur-sm border border-white/20"
                     whileHover={{ y: -5 }}
                   >
-                    <FaLightbulb className="text-purple-300 text-3xl mx-auto mb-2" />
+                    <FaLightbulb className="text-white text-3xl mx-auto mb-2" />
                     <p className="font-bold text-white">50+ Projects</p>
                     <p className="text-sm text-gray-300">Creative Works</p>
                   </motion.div>
@@ -110,7 +110,7 @@ export default function About() {
                 {/* Buttons */}
                 <div className="flex flex-wrap gap-4">
                   <motion.button
-                    className="px-6 py-3 bg-white/20 border-2 border-purple-300 text-white rounded-full font-medium shadow-lg hover:shadow-xl transition-all flex items-center"
+                    className="px-6 py-3 bg-white/20 border-2 border-gray-300 text-white rounded-full font-medium shadow-lg hover:shadow-xl transition-all flex items-center"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
@@ -150,7 +150,7 @@ export default function About() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
                       <div>
                         <p className="text-white font-medium">ATIVERSE 24'</p>
-                        <p className="text-pink-300 text-sm">Momen kebersamaan kita</p>
+                        <p className="text-gray-300 text-sm">Momen kebersamaan kita</p>
                       </div>
                     </div>
                   )}
@@ -172,17 +172,17 @@ export default function About() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                icon: <FaHandsHelping className="text-4xl mb-4 text-purple-300 mx-auto" />,
+                icon: <FaHandsHelping className="text-4xl mb-4 text-white mx-auto" />,
                 title: "Kebersamaan",
                 desc: "Kami percaya kekuatan tim lebih besar dari individu"
               },
               {
-                icon: <FaLightbulb className="text-4xl mb-4 text-pink-300 mx-auto" />,
+                icon: <FaLightbulb className="text-4xl mb-4 text-white mx-auto" />,
                 title: "Kreativitas",
                 desc: "Inovasi dan ide baru adalah napas kami"
               },
               {
-                icon: <FaHeart className="text-4xl mb-4 text-purple-300 mx-auto" />,
+                icon: <FaHeart className="text-4xl mb-4 text-white mx-auto" />,
                 title: "Kekeluargaan",
                 desc: "Lebih dari sekedar tim, kami adalah keluarga"
               },
