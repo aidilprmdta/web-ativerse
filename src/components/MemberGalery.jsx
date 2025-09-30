@@ -1,8 +1,8 @@
-import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import { Github, Instagram, Linkedin } from "lucide-react";
-import Modal from "./Modal";
+import { motion, AnimatePresence } from "framer-motion";
+import { Github, Instagram, Linkedin, X } from "lucide-react";
 
+// Data anggota
 const members = [
   {
     name: "Aidil",
@@ -10,301 +10,320 @@ const members = [
     image: "https://dl.dropboxusercontent.com/scl/fi/w0pldr3msv4vu3pb4qbzb/Aidil.JPG?rlkey=puyfp0s9ue7ize1v2bxi4nitx",
     instagram: "https://instagram.com/aidilprmdta",
     linkedin: "https://linkedin.com/in/aidilprmdta",
-    github: "https://github.com/aidilprmdta",
+    github: "https://github.com/aidilprmdta"
   },
   {
     name: "Lupi",
-    role: "Babu Ativerse",
+    role: "Babu",
     image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
-    instagram: "https://instagram.com/andhikapratama",
-    linkedin: "https://linkedin.com/in/aidilprmdta",
-    github: "https://github.com/aidilprmdta",
+    instagram: "https://instagram.com/andikaprtmlupii_",
+    linkedin: "https://linkedin.com/in/andikaprtmlupii_",
+    github: "https://github.com/andikaprtmlupii_"
   },
   {
-    name: "Rifqi",
-    role: "Panglima Tempur Ativerse+",
-    image: "https://dl.dropboxusercontent.com/scl/fi/339p46ji73z25gylhnphu/IMG-20241125-WA0131.jpg?rlkey=5lowmypjggdc5xvezhj2qbcqn",
-    instagram: "https://instagram.com/jujulianrifqi",
-    linkedin: "https://linkedin.com/in/rifqijulian",
-    github: "https://github.com/rifqijulian"  
+    name: "Kijul",
+    role: "Panglima Tempur",
+    image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
+    instagram: "https://instagram.com/lupi",
+    linkedin: "https://linkedin.com/in/lupi",
   },
   {
-    name: "Hafizh",
-    role: "Admin Ativerse",
-    image: "https://dl.dropboxusercontent.com/scl/fi/7vixawlo5toyg823ocshl/IMG-20241125-WA0126.jpg?rlkey=4gnib6tx1m0iv8qqmxo6hqhp4",
-    instagram: "https://instagram.com/hafizhrai_"
-  },
-  {
-    name: "Bunda & Papi",
-    role: "Ketua Ativerse",
-    image: "https://dl.dropboxusercontent.com/scl/fi/1cx3bvynuxubi1p9xgloi/IMG-20250224-WA0424.jpg?rlkey=4sycoy0teoi0xxpvwm70t4u5a",
-    instagram: "https://instagram.com/aidilprmdta"
-  },
-  {
-    name: "Hafy",
-    role: "Ketua Ativerse",
-    image: "https://dl.dropboxusercontent.com/scl/fi/ieh7a328rpq58bw7shkjg/IMG_2650.JPG?rlkey=hbuookjwzth6kmwu1ofg5pez9",
-    instagram: "https://instagram.com/aidilprmdta",
-  },
-  {
-    name: "Ramadhan",
-    role: "Ketua Ativerse",
-    image: "https://dl.dropboxusercontent.com/scl/fi/w0pldr3msv4vu3pb4qbzb/Aidil.JPG?rlkey=puyfp0s9ue7ize1v2bxi4nitx",
-    instagram: "https://instagram.com/aidilprmdta",
+    name: "Hafiz",
+    role: "Playboy",
+    image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
+    instagram: "https://instagram.com/hafizraihan_"
   },
   {
     name: "Irwan",
-    role: "Kosma Ativerse",
-    image: "https://dl.dropboxusercontent.com/scl/fi/w0pldr3msv4vu3pb4qbzb/Aidil.JPG?rlkey=puyfp0s9ue7ize1v2bxi4nitx",
-    instagram: "https://instagram.com/irwansyahputra838",
-    linkedin: "https://linkedin.com/in/aidilprmdta",
-    github: "https://github.com/aidilprmdta",
-  },
-  {
-    name: "Julio",
-    role: "Preman Ativerse",
-    image: "https://dl.dropboxusercontent.com/scl/fi/w0pldr3msv4vu3pb4qbzb/Aidil.JPG?rlkey=puyfp0s9ue7ize1v2bxi4nitx",
-    instagram: "https://instagram.com/julioo_aja",
-    linkedin: "https://linkedin.com/in/aidilprmdta",
-    github: "https://github.com/aidilprmdta",
-  },
-  {
-    name: "Aidil",
-    role: "Ketua Ativerse",
-    image: "https://dl.dropboxusercontent.com/scl/fi/w0pldr3msv4vu3pb4qbzb/Aidil.JPG?rlkey=puyfp0s9ue7ize1v2bxi4nitx",
-    instagram: "https://instagram.com/aidilprmdta",
-    linkedin: "https://linkedin.com/in/aidilprmdta",
-    github: "https://github.com/aidilprmdta",
-  },
-  {
-    name: "Aidil",
-    role: "Ketua Ativerse",
-    image: "https://dl.dropboxusercontent.com/scl/fi/w0pldr3msv4vu3pb4qbzb/Aidil.JPG?rlkey=puyfp0s9ue7ize1v2bxi4nitx",
-    instagram: "https://instagram.com/aidilprmdta",
-    linkedin: "https://linkedin.com/in/aidilprmdta",
-    github: "https://github.com/aidilprmdta",
-  },
-  {
-    name: "Mutpi",
-    role: "Ketua Ativerse",
+    role: "Kosma",
     image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
-    instagram: "https://instagram.com/aidilprmdta",
-    linkedin: "https://linkedin.com/in/aidilprmdta",
-    github: "https://github.com/aidilprmdta",
+    instagram: "https://instagram.com/irwansyahputra678"
   },
   {
-    name: "Mutpi",
-    role: "Ketua Ativerse",
+    name: "Cudid",
+    role: "Babu",
     image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
-    instagram: "https://instagram.com/aidilprmdta",
-    linkedin: "https://linkedin.com/in/aidilprmdta",
-    github: "https://github.com/aidilprmdta",
+    instagram: "https://instagram.com/lupi",
+    linkedin: "https://linkedin.com/in/lupi",
   },
   {
-    name: "Mutpi",
-    role: "Ketua Ativerse",
+    name: "Arifal",
+    role: "Babu",
     image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
-    instagram: "https://instagram.com/aidilprmdta",
-    linkedin: "https://linkedin.com/in/aidilprmdta",
-    github: "https://github.com/aidilprmdta",
+    instagram: "https://instagram.com/lupi",
+    linkedin: "https://linkedin.com/in/lupi",
   },
   {
-    name: "Mutpi",
-    role: "Ketua Ativerse",
-    image: "https://dl.dropboxusercontent.com/scl/fi/7vixawlo5toyg823ocshl/IMG-20241125-WA0126.jpg?rlkey=4gnib6tx1m0iv8qqmxo6hqhp4",
-    instagram: "https://instagram.com/aidilprmdta",
-    linkedin: "https://linkedin.com/in/aidilprmdta",
-    github: "https://github.com/aidilprmdta",
-  },
-  {
-    name: "Mutpi",
-    role: "Ketua Ativerse",
+    name: "Davie",
+    role: "Pak Bos",
     image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
-    instagram: "https://instagram.com/aidilprmdta",
-    linkedin: "https://linkedin.com/in/aidilprmdta",
-    github: "https://github.com/aidilprmdta",
+    instagram: "https://instagram.com/lupi",
+    linkedin: "https://linkedin.com/in/lupi",
   },
   {
-    name: "Mutpi",
-    role: "Ketua Ativerse",
+    name: "Lupi",
+    role: "Babu",
     image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
-    instagram: "https://instagram.com/aidilprmdta",
-    linkedin: "https://linkedin.com/in/aidilprmdta",
-    github: "https://github.com/aidilprmdta",
+    instagram: "https://instagram.com/lupi",
+    linkedin: "https://linkedin.com/in/lupi",
   },
   {
-    name: "Mutpi",
-    role: "Ketua Ativerse",
+    name: "Lupi",
+    role: "Babu",
     image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
-    instagram: "https://instagram.com/aidilprmdta",
-    linkedin: "https://linkedin.com/in/aidilprmdta",
-    github: "https://github.com/aidilprmdta",
+    instagram: "https://instagram.com/lupi",
+    linkedin: "https://linkedin.com/in/lupi",
   },
   {
-    name: "Mutpi",
-    role: "Ketua Ativerse",
+    name: "Lupi",
+    role: "Babu",
     image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
-    instagram: "https://instagram.com/aidilprmdta",
-    linkedin: "https://linkedin.com/in/aidilprmdta",
-    github: "https://github.com/aidilprmdta",
+    instagram: "https://instagram.com/lupi",
+    linkedin: "https://linkedin.com/in/lupi",
   },
   {
-    name: "Mutpi",
-    role: "Ketua Ativerse",
+    name: "Lupi",
+    role: "Babu",
     image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
-    instagram: "https://instagram.com/aidilprmdta",
-    linkedin: "https://linkedin.com/in/aidilprmdta",
-    github: "https://github.com/aidilprmdta",
+    instagram: "https://instagram.com/lupi",
+    linkedin: "https://linkedin.com/in/lupi",
   },
   {
-    name: "Mutpi",
-    role: "Ketua Ativerse",
+    name: "Lupi",
+    role: "Babu",
     image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
-    instagram: "https://instagram.com/aidilprmdta",
-    linkedin: "https://linkedin.com/in/aidilprmdta",
-    github: "https://github.com/aidilprmdta",
+    instagram: "https://instagram.com/lupi",
+    linkedin: "https://linkedin.com/in/lupi",
+  },
+  {
+    name: "Lupi",
+    role: "Babu",
+    image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
+    instagram: "https://instagram.com/lupi",
+    linkedin: "https://linkedin.com/in/lupi",
+  },
+  {
+    name: "Lupi",
+    role: "Babu",
+    image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
+    instagram: "https://instagram.com/lupi",
+    linkedin: "https://linkedin.com/in/lupi",
+  },
+  {
+    name: "Lupi",
+    role: "Babu",
+    image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
+    instagram: "https://instagram.com/lupi",
+    linkedin: "https://linkedin.com/in/lupi",
+  },
+  {
+    name: "Lupi",
+    role: "Babu",
+    image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
+    instagram: "https://instagram.com/lupi",
+    linkedin: "https://linkedin.com/in/lupi",
+  },
+  {
+    name: "Lupi",
+    role: "Babu",
+    image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
+    instagram: "https://instagram.com/lupi",
+    linkedin: "https://linkedin.com/in/lupi",
+  },
+  {
+    name: "Lupi",
+    role: "Babu",
+    image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
+    instagram: "https://instagram.com/lupi",
+    linkedin: "https://linkedin.com/in/lupi",
+  },
+  {
+    name: "Lupi",
+    role: "Babu",
+    image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
+    instagram: "https://instagram.com/lupi",
+    linkedin: "https://linkedin.com/in/lupi",
+  },
+  {
+    name: "Lupi",
+    role: "Babu",
+    image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
+    instagram: "https://instagram.com/lupi",
+    linkedin: "https://linkedin.com/in/lupi",
+  },
+  {
+    name: "Lupi",
+    role: "Babu",
+    image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
+    instagram: "https://instagram.com/lupi",
+    linkedin: "https://linkedin.com/in/lupi",
+  },
+  {
+    name: "Lupi",
+    role: "Babu",
+    image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
+    instagram: "https://instagram.com/lupi",
+    linkedin: "https://linkedin.com/in/lupi",
+  },
+  {
+    name: "Lupi",
+    role: "Babu",
+    image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
+    instagram: "https://instagram.com/lupi",
+    linkedin: "https://linkedin.com/in/lupi",
+  },
+  {
+    name: "Lupi",
+    role: "Babu",
+    image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
+    instagram: "https://instagram.com/lupi",
+    linkedin: "https://linkedin.com/in/lupi",
+  },
+  {
+    name: "Lupi",
+    role: "Babu",
+    image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
+    instagram: "https://instagram.com/lupi",
+    linkedin: "https://linkedin.com/in/lupi",
+  },
+  {
+    name: "Lupi",
+    role: "Babu",
+    image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
+    instagram: "https://instagram.com/lupi",
+    linkedin: "https://linkedin.com/in/lupi",
   },
 ];
 
-const chunkArray = (arr, size) => {
-  const chunked = [];
-  for (let i = 0; i < arr.length; i += size) {
-    chunked.push(arr.slice(i, i + size));
-  }
-  return chunked;
-};
+// Modal wrapper
+function Modal({ children, onClose }) {
+  return (
+    <div className="fixed inset-0 bg-black/70 backdrop-blur-md flex items-center justify-center z-50 p-4">
+      <div className="absolute inset-0" onClick={onClose} />
+      {children}
+    </div>
+  );
+}
 
-export default function MemberGallery() {
-  const [selected, setSelected] = useState(null);
-  const [page, setPage] = useState(0);
-  const membersPerPage = 5;
-  const onClose = () => setSelected(null);
-
-  // Membagi anggota menjadi halaman
-  if (members.length === 0) return <div className="text-center text-white">Tidak ada anggota yang tersedia.</div>;
-  const slides = chunkArray(members, membersPerPage);
-  const currentSlide = slides[page];
+export default function AnggotaAtiverse() {
+  const [selectedIndex, setSelectedIndex] = useState(null);
 
   return (
-    <section className="relative py-20 overflow-hidden bg-gradient-to-br from-pink-900 via-indigo-800 to-purple-800">
-      {/* Floating Background Elements */}
-      <div className="absolute inset-0 overflow-hidden opacity-20 pointer-events-none">
-        {[...Array(15)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute rounded-full bg-white/10"
-            style={{
-              width: `${Math.random() * 20 + 5}px`,
-              height: `${Math.random() * 20 + 5}px`,
-              top: `${Math.random() * 100}%`,
-              left: `${Math.random() * 100}%`,
-            }}
-            animate={{
-              y: [0, (Math.random() - 0.5) * 100],
-              x: [0, (Math.random() - 0.5) * 100],
-              opacity: [0.3, 0.8, 0.3],
-            }}
-            transition={{
-              duration: Math.random() * 10 + 10,
-              repeat: Infinity,
-              repeatType: "reverse",
-            }}
-          />
-        ))}
-      </div>
-      <div className="container mx-auto px-4 relative z-10">
-        <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-300 mb-4 text-center">
-            Members Ativerse
-        </h2>
-      <div className="w-60 h-1 bg-gradient-to-r from-purple-400 to-pink-300 mx-auto mb-6 rounded-full"></div>
-      </div>
-      <div className="py-10 px-4 text-center">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={page}
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -50 }}
-            transition={{ duration: 0.5 }}
-            className="flex justify-center gap-4"
-          >
-            {currentSlide.map((member, index) => (
-              <motion.div
-                key={index}
-                onClick={() => setSelected(member)}
-                className="relative w-[240px] h-[360px] rounded-xl overflow-hidden cursor-pointer group shadow-lg"
-                whileHover={{ scale: 1.05 }}
-              >
+    <section className="py-20 bg-gradient-to-b from-black via-gray-900 to-black text-white">
+      <div className="container mx-auto px-4">
+        {/* Header */}
+        <motion.div
+          className="text-center mb-12"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-white mb-4">
+            Anggota Ativerse
+          </h2>
+          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+            Anggota beban keluarga
+          </p>
+        </motion.div>
+
+        {/* Scroll horizontal */}
+        <div className="flex space-x-4 overflow-x-auto pb-6 scrollbar-hide">
+          {members.map((member, index) => (
+            <motion.div
+              key={index}
+              className="flex-shrink-0 w-48 bg-white/5 rounded-xl p-4 cursor-pointer hover:shadow-xl hover:shadow-gray-500/20 transition"
+              whileHover={{ scale: 1.05 }}
+              onClick={() => setSelectedIndex(index)}
+            >
+              <div className="w-32 h-32 mx-auto rounded-full overflow-hidden ring-4 ring-gray-400/30">
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
+                  className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-pink-500/70 to-transparent" />
-                <h2 className="absolute inset-0 flex flex-col items-center justify-center font-bold text-white text-2xl tracking-widest">
-                  {member.name.split("").map((char, i) => (
-                    <span key={i}>{char}</span>
-                  ))}
-                </h2>
-              </motion.div>
-            ))}
-          </motion.div>
-        </AnimatePresence>
-
-        {/* Bullet Navigation */}
-        <div className="flex justify-center mt-6 gap-2">
-          {slides.map((_, i) => (
-            <button
-              key={i}
-              onClick={() => setPage(i)}
-              className={`w-3 h-3 rounded-full ${
-                i === page ? "bg-white" : "bg-gray-500"
-              } transition duration-300`}
-            />
+              </div>
+              <h3 className="mt-4 text-lg font-bold text-center">{member.name}</h3>
+              <p className="text-center text-gray-400 text-sm">{member.role}</p>
+            </motion.div>
           ))}
         </div>
       </div>
 
-      {selected && (
-        <Modal onClose={() => setSelected(null)}>
-            <div className="relative">
-              <img
-                src={selected.image}
-                alt={selected.name}
-                className="w-full h-[400px] object-cover"
-              />
-              <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent">
-                <h3 className="text-sm text-white opacity-80">{selected.role}</h3>
-                <h1 className="text-2xl font-bold text-white">{selected.name}</h1>
+      {/* Modal detail anggota */}
+      <AnimatePresence>
+        {selectedIndex !== null && (
+          <Modal onClose={() => setSelectedIndex(null)}>
+            <motion.div
+              key={selectedIndex}
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.8, opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className="relative bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-6 w-[350px] mx-auto text-center border border-white/20"
+            >
+              {/* Tombol close */}
+              <button
+                onClick={() => setSelectedIndex(null)}
+                className="absolute top-3 right-3 p-2 rounded-full bg-black/50 hover:bg-black/70"
+              >
+                <X size={18} className="text-white" />
+              </button>
+
+              {/* Data anggota */}
+              <div className="relative w-40 h-40 mx-auto rounded-full overflow-hidden shadow-lg ring-4 ring-gray-500/40">
+                <img
+                  src={members[selectedIndex].image}
+                  alt={members[selectedIndex].name}
+                  className="w-full h-full object-cover"
+                />
               </div>
-            </div>
-            <a
-              href={selected.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-flex items-center justify-center gap-2 px-4 py-2 bg-pink-600 text-white rounded-full hover:bg-pink-700 transition w-full"
-            >
-              <Instagram size={18} /> Follow on Instagram
-            </a>
-            <a
-              href={selected.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-flex items-center justify-center gap-2 px-4 py-2 bg-pink-600 text-white rounded-full hover:bg-pink-700 transition w-full"
-            >
-              <Linkedin size={18} /> Koneksi On LinkedIn
-            </a>
-            <a
-              href={selected.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-flex items-center justify-center gap-2 px-4 py-2 bg-pink-600 text-white rounded-full hover:bg-pink-700 transition w-full"
-            >
-              <Github size={18} /> Follow On Github
-            </a>
-      
-        </Modal>
-      )}
-      </ section>
+
+              <div className="mt-6">
+                <h3 className="text-sm text-gray-300 tracking-wide">
+                  {members[selectedIndex].role}
+                </h3>
+                <h1 className="text-2xl font-bold text-white mt-1 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                  {members[selectedIndex].name}
+                </h1>
+              </div>
+
+              {/* Tombol sosmed */}
+              <div className="mt-8 flex flex-col gap-3">
+                {members[selectedIndex].instagram && (
+                  <a
+                    href={members[selectedIndex].instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-pink-500 to-pink-600 text-white font-medium shadow-lg hover:shadow-pink-500/40 hover:scale-105 transition-transform"
+                  >
+                    <Instagram size={18} /> Instagram
+                  </a>
+                )}
+                {members[selectedIndex].linkedin && (
+                  <a
+                    href={members[selectedIndex].linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 text-white font-medium shadow-lg hover:shadow-blue-500/40 hover:scale-105 transition-transform"
+                  >
+                    <Linkedin size={18} /> LinkedIn
+                  </a>
+                )}
+                {members[selectedIndex].github && (
+                  <a
+                    href={members[selectedIndex].github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-gray-800 to-gray-900 text-white font-medium shadow-lg hover:shadow-gray-700/40 hover:scale-105 transition-transform"
+                  >
+                    <Github size={18} /> Github
+                  </a>
+                )}
+              </div>
+            </motion.div>
+          </Modal>
+        )}
+      </AnimatePresence>
+    </section>
   );
 }
