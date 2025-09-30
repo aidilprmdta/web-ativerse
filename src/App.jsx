@@ -14,6 +14,7 @@ import Footer from "./components/Footer";
 import MemberGallery from "./components/MemberGalery";
 import ScrollToTop from "./components/ScrollToTop";
 import Loading from "./components/Loading";
+import Kontributor from "./components/Kontributor";
 
 function App() {
   const [showWelcome, setShowWelcome] = useState(true);
