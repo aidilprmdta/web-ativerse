@@ -45,6 +45,7 @@ function App() {
           >
             <WelcomeScreen onFinish={() => setShowWelcome(false)} />
           </motion.div>
+          
         ) : (
           <motion.div
             key="main"
@@ -56,7 +57,7 @@ function App() {
             <ScrollToTop />
             <Navbar />
 
-            <main className="bg-gradient-to-b from-white via-pink-50 to-purple-100">
+            <main className="bg-gradient-to-b from-white via-pink-50 to-gray-100">
               <div id="home" className="w-full overflow-x-hidden">
                 <Home />
               </div>
