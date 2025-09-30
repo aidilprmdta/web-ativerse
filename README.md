@@ -1,7 +1,7 @@
 
 # 🌐 Web Ativerse
 
-Web Ativerse adalah website single-page (SPA) interaktif untuk kelas yang menampilkan informasi penting seperti Home, About, Contact, Komentar, dan Galeri. Dibangun menggunakan React, TailwindCSS, GSAP, AOS, Framer Motion, dan Supabase untuk menyimpan komentar dan gambar galeri secara real-time.
+Web Ativerse adalah website single-page (SPA) interaktif untuk kelas yang menampilkan informasi penting seperti Home, About, Member Galery, Komentar, Galeri, dan Kontributor. Dibangun menggunakan React, TailwindCSS, GSAP, AOS, Framer Motion, dan Supabase untuk menyimpan komentar secara real-time.
 
 ## 🚀 Fitur Utama
 
@@ -59,7 +59,7 @@ Web Ativerse adalah website single-page (SPA) interaktif untuk kelas yang menamp
 
 ## 📷 Preview
 
-![Preview](https://github.com/aidilprmdta/porto-two-site/blob/main/image.png?raw=true) <!-- Ganti dengan screenshot proyek -->
+![Preview](https://github.com/aidilprmdta/web-ativerse/blob/main/image.png?raw=true)
 
 ## 📌 Catatan
 
