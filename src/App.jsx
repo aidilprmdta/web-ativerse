@@ -16,6 +16,14 @@ import ScrollToTop from "./components/ScrollToTop";
 import Loading from "./components/Loading";
 import Kontributor from "./components/Kontributor";
 
+//Fitur Shadcn Ui
+import {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from "./components/ui/Accordion";
+
 function App() {
   const [showWelcome, setShowWelcome] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
@@ -74,7 +82,63 @@ function App() {
               <div id="komentar" className="w-full overflow-x-hidden">
                 <Komentar />
               </div>
+              <div id="question" className="w-full overflow-x-hidden">
+                <Accordion />
+              </div>
             </main>
+
+            <div id="question" className="p-10">
+              <h1 className="text-5xl text-center font-bold mb-4">Our FAQ's.</h1>
+                <Accordion type="single" collapsible className="w-full">
+                  <AccordionItem value="item-1">
+                    <AccordionTrigger>Apa itu Ativerse?</AccordionTrigger>
+                    <AccordionContent>
+                      Ativerse adalah kelas A dari angkatan 24, kelas ini merupakan kelas yang
+                      penuh semangat dan kreativitas. Ativerse adalah komunitas yang berkomitmen
+                      untuk belajar bersama, berbagi pengetahuan, dan tumbuh sebagai individu
+                      yang lebih baik. Dalam Ativerse, setiap anggota dianggap sebagai bagian
+                      dari keluarga besar yang saling mendukung dan menginspirasi satu sama
+                      lain.
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="item-2">
+                    <AccordionTrigger>Bagaimana cara komentar?</AccordionTrigger>
+                    <AccordionContent>
+                      Tinggal isi form komentar di bawah, langsung tampil otomatis.
+                  </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="item-3">
+                    <AccordionTrigger>Siapa yang membuat website Ativerse?</AccordionTrigger>
+                    <AccordionContent>
+                      Website ini dibuat dengan ikhlas oleh oleh ganteng dan paling jenius yang mengalahakan Albert Einstein yaitu <a href="https://github.com/aidilprmdta">Aidil Pramadita Putra</a>.
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="item-4">
+                    <AccordionTrigger>Siapa kosma Ativerse?</AccordionTrigger>
+                    <AccordionContent>
+                      Kosma Ativerse adalah <a href="https://www.instagram.com/irwansyahputra678/">Irwansyah Putra</a>, dia adalah ketua kosma yang sangat baik hati, ganteng, jenius, dan humoris.
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="item-5">
+                    <AccordionTrigger>Siapa di Ativerse yang sering confes?</AccordionTrigger>
+                    <AccordionContent>
+                      Orang yang sering confes di Ativerse adalah Julio Nababan bisa di panggil Joo.
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="item-6">
+                    <AccordionTrigger>Siapa yang cantik dan ganteng di Ativerse?</AccordionTrigger>
+                    <AccordionContent>
+                      Orang yang cantik dan ganteng di Ativerse adalah semuanya cantik dan ganteng tanpa terkecuali.
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="item-7">
+                    <AccordionTrigger>Siapa yang suka memendam perasaan?</AccordionTrigger>
+                    <AccordionContent>
+                      Yang suka memendam perasaan kepada seseorang yaitu Hafizh Raihan Hidayat
+                    </AccordionContent>
+                </AccordionItem>
+                </Accordion>
+            </div>
 
             <Footer />
           </motion.div>
