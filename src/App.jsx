@@ -87,7 +87,7 @@ function App() {
               </div>
             </main>
 
-            <div id="question" className="p-10">
+            <div id="question" className="p-10 ">
               <h1 className="text-5xl text-center font-bold mb-4">Our FAQ's.</h1>
                 <Accordion type="single" collapsible className="w-full">
                   <AccordionItem value="item-1">
