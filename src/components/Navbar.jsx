@@ -9,7 +9,7 @@ export default function Navbar() {
   const menuButtonRef = useRef(null);
   const firstLinkRef = useRef(null);
   const menuLinksRef = useRef([]);
-  const menuItems = ["home", "about", "member galery", "galeri", "komentar"];
+  const menuItems = ["home", "about", "member galeri", "galeri", "komentar"];
 
   // efek scroll background
   useEffect(() => {
