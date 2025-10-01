@@ -19,6 +19,8 @@ const images = [
   "https://dl.dropboxusercontent.com/scl/fi/2t0srsxlac87usl1tpvgi/IMG-20241209-WA0087.jpg?rlkey=q59un42wekrqq8kjbjfxr4yb4",
   "https://dl.dropboxusercontent.com/scl/fi/hlthca821kq5z92mek6ko/IMG-20241220-WA0372.jpg?rlkey=im7j1j37iukxykefhr52godqp",
   "https://dl.dropboxusercontent.com/scl/fi/a4dwhqhiuowdrfyd2jc91/IMG-20241224-WA0122.jpg?rlkey=x0kyqkmvphpqlyyur7uyztybv",  
+  "https://www.dropbox.com/scl/fi/2v0ppbsm904rxicyw3z5o/IMG-20250910-WA0025-1.jpg?rlkey=f34wjdq9q36dbi8d12jd9hizy&st=ghc3p177&raw=1",
+  
 ];
 
 export default function GaleriDanKomentar() {

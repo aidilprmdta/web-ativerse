@@ -63,7 +63,7 @@ export default function WelcomeScreen({ onFinish }) {
         </motion.p>
         
         <motion.div
-          className="flex justify-center space-x-6"
+          className="flex justify-center space-x-3"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5, duration: 1 }}
