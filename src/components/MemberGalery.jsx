@@ -14,7 +14,7 @@ const members = [
   },
   {
     name: "Lupi",
-    role: "Babu",
+    role: "Play Boy",
     image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
     instagram: "https://instagram.com/andikaprtmlupii_",
     linkedin: "https://linkedin.com/in/andikaprtmlupii_",
@@ -61,21 +61,21 @@ const members = [
     linkedin: "https://linkedin.com/in/lupi",
   },
   {
-    name: "Lupi",
+    name: "Hafy",
     role: "Babu",
     image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
     instagram: "https://instagram.com/lupi",
     linkedin: "https://linkedin.com/in/lupi",
   },
   {
-    name: "Lupi",
+    name: "Bayu",
     role: "Babu",
     image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
     instagram: "https://instagram.com/lupi",
     linkedin: "https://linkedin.com/in/lupi",
   },
   {
-    name: "Lupi",
+    name: "Syafwan",
     role: "Babu",
     image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
     instagram: "https://instagram.com/lupi",

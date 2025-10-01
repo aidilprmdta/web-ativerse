@@ -87,9 +87,9 @@ function App() {
               </div>
             </main>
 
-            <div id="question" className="p-10 ">
+            <div id="question" className="p-10 bg-black text-white">
               <h1 className="text-5xl text-center font-bold mb-4">Our FAQ's.</h1>
-                <Accordion type="single" collapsible className="w-full">
+                <Accordion type="single" collapsible className="w-full text-4xl">
                   <AccordionItem value="item-1">
                     <AccordionTrigger>Apa itu Ativerse?</AccordionTrigger>
                     <AccordionContent>
@@ -116,7 +116,7 @@ function App() {
                   <AccordionItem value="item-4">
                     <AccordionTrigger>Siapa kosma Ativerse?</AccordionTrigger>
                     <AccordionContent>
-                      Kosma Ativerse adalah <a href="https://www.instagram.com/irwansyahputra678/">Irwansyah Putra</a>, dia adalah ketua kosma yang sangat baik hati, ganteng, jenius, dan humoris.
+                      Kosma Ativerse adalah <a href="https://www.instagram.com/irwansyahputra678/">Irwansyah Putra</a>, dia adalah ketua kosma yang sangat baik hati, ganteng, jenius, dan humoris. dan  pelit
                     </AccordionContent>
                   </AccordionItem>
                   <AccordionItem value="item-5">
@@ -134,7 +134,13 @@ function App() {
                   <AccordionItem value="item-7">
                     <AccordionTrigger>Siapa yang suka memendam perasaan?</AccordionTrigger>
                     <AccordionContent>
-                      Yang suka memendam perasaan kepada seseorang yaitu Hafizh Raihan Hidayat
+                      Yang suka memendam perasaan kepada seseorang yaitu Hafizh Raihan Hidayat dan  Ahmad Hadid
+                    </AccordionContent>
+                </AccordionItem>
+                  <AccordionItem value="item-">
+                    <AccordionTrigger>Siapa yang suka denial?</AccordionTrigger>
+                    <AccordionContent>
+                      Yang suka denial dengan perasaannya yaitu Andika Pratama Lupi
                     </AccordionContent>
                 </AccordionItem>
                 </Accordion>
