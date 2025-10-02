@@ -110,7 +110,7 @@
                     <AccordionItem value="item-3">
                       <AccordionTrigger>Siapa yang membuat website Ativerse?</AccordionTrigger>
                       <AccordionContent>
-                        Website ini dibuat dengan ikhlas oleh oleh ganteng dan paling jenius yang mengalahakan Albert Einstein yaitu <a href="https://github.com/aidilprmdta">Aidil Pramadita Putra</a>.
+                        Website ini dibuat dengan ikhlas oleh orang ganteng yang bercita-cita menjadi seorang developer terbaik sekaligus jago hacking yaitu <a href="https://github.com/aidilprmdta">Aidil Pramadita Putra</a>.
                       </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-4">
@@ -137,10 +137,16 @@
                         Yang suka memendam perasaan kepada seseorang yaitu Hafizh Raihan Hidayat dan  Ahmad Hadid
                       </AccordionContent>
                   </AccordionItem>
-                    <AccordionItem value="item-">
+                    <AccordionItem value="item-8">
                       <AccordionTrigger>Siapa yang suka denial?</AccordionTrigger>
                       <AccordionContent>
                         Yang suka denial dengan perasaannya yaitu Andika Pratama Lupi
+                      </AccordionContent>
+                  </AccordionItem>
+                    <AccordionItem value="item-9">
+                      <AccordionTrigger>Siapa yang suka bagi-bagi jawaban?</AccordionTrigger>
+                      <AccordionContent>
+                        Yang suka bagi bagi jawaban yaitu Aidil
                       </AccordionContent>
                   </AccordionItem>
                   </Accordion>
