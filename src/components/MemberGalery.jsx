@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Github, Instagram, Linkedin, X } from "lucide-react";
-
+import { Link as ScrollLink } from "react-scroll";
 // Data anggota
 const members = [
   {
@@ -15,7 +15,7 @@ const members = [
   {
     name: "Lupi",
     role: "Play Boy",
-    image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
+    image: "https://www.dropbox.com/scl/fi/phdm7to3x78p5h6uwoifk/lupi.jpg?rlkey=w47lvpouwq2q1ihkcrqm5ksfq&st=rc1xernk&raw=1",
     instagram: "https://instagram.com/andikaprtmlupii_",
     linkedin: "https://linkedin.com/in/andikaprtmlupii_",
     github: "https://github.com/andikaprtmlupii_"
@@ -23,176 +23,117 @@ const members = [
   {
     name: "Kijul",
     role: "Panglima Tempur",
-    image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
-    instagram: "https://instagram.com/lupi",
-    linkedin: "https://linkedin.com/in/lupi",
+    image: "https://www.dropbox.com/scl/fi/de269aocxpf1z8yqe1esc/kijul.jpg?rlkey=8m6ngdosbhugfddc04rqt9fdy&st=14s08zua&raw=1",
+    instagram: "https://instagram.com/jujulianrifqi",
   },
   {
-    name: "Hafiz",
+    name: "Apez",
     role: "Playboy",
-    image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
-    instagram: "https://instagram.com/hafizraihan_"
+    image: "https://www.dropbox.com/scl/fi/keoddz2zxhohc9cy08lnt/apez.jpg?rlkey=glm8o2yrit9smyovbjtbhjif3&st=b9h6m965&raw=1",
+    instagram: "https://instagram.com/hafizrai_"
   },
   {
     name: "Irwan",
     role: "Kosma",
     image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
-    instagram: "https://instagram.com/irwansyahputra678"
+    instagram: "https://instagram.com/irwansyahputra838"
   },
   {
     name: "Cudid",
     role: "Babu",
     image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
-    instagram: "https://instagram.com/lupi",
-    linkedin: "https://linkedin.com/in/lupi",
+    instagram: "https://instagram.com/am.diiid_",
   },
   {
     name: "Arifal",
     role: "Babu",
     image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
-    instagram: "https://instagram.com/lupi",
-    linkedin: "https://linkedin.com/in/lupi",
+    instagram: "https://instagram.com/rifaru_30",
   },
   {
     name: "Davie",
     role: "Pak Bos",
-    image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
-    instagram: "https://instagram.com/lupi",
-    linkedin: "https://linkedin.com/in/lupi",
+    image: "https://www.dropbox.com/scl/fi/kcyv8e49gi8n2g2g22oti/Gambar-WhatsApp-2025-10-01-pukul-12.18.48_705d8b9b.jpg?rlkey=6fq2jf61ipz87jg86n6ll3od2&st=eipvktif&raw=1",
+    instagram: "https://instagram.com/fauzandafie11",
   },
   {
     name: "Hafy",
     role: "Babu",
     image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
-    instagram: "https://instagram.com/lupi",
-    linkedin: "https://linkedin.com/in/lupi",
+    instagram: "https://instagram.com/fajrhfy.wirani_",
   },
   {
     name: "Bayu",
     role: "Babu",
     image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
-    instagram: "https://instagram.com/lupi",
-    linkedin: "https://linkedin.com/in/lupi",
+    instagram: "https://instagram.com/bay_hen_563",
   },
   {
     name: "Syafwan",
     role: "Babu",
     image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
-    instagram: "https://instagram.com/lupi",
-    linkedin: "https://linkedin.com/in/lupi",
+    instagram: "https://instagram.com/waannskyy",
   },
   {
-    name: "Lupi",
+    name: "Ishna",
+    role: "Babu",
+    image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
+    instagram: "https://instagram.com/_nrfwzyh",
+  },
+  {
+    name: "Joo",
+    role: "Babu",
+    image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
+    instagram: "https://instagram.com/julioo_aja",
+  },
+  {
+    name: "Lathifa",
     role: "Babu",
     image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
     instagram: "https://instagram.com/lupi",
-    linkedin: "https://linkedin.com/in/lupi",
   },
   {
-    name: "Lupi",
+    name: "Ramadhan",
     role: "Babu",
     image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
-    instagram: "https://instagram.com/lupi",
-    linkedin: "https://linkedin.com/in/lupi",
+    instagram: "https://instagram.com/chif_l1",
   },
   {
-    name: "Lupi",
+    name: "Radika",
     role: "Babu",
     image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
-    instagram: "https://instagram.com/lupi",
-    linkedin: "https://linkedin.com/in/lupi",
+    instagram: "https://instagram.com/xxdikaa12",
   },
   {
-    name: "Lupi",
+    name: "Mutia",
     role: "Babu",
     image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
-    instagram: "https://instagram.com/lupi",
-    linkedin: "https://linkedin.com/in/lupi",
+    instagram: "https://instagram.com/maviraee",
   },
   {
-    name: "Lupi",
+    name: "Wawa",
     role: "Babu",
     image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
-    instagram: "https://instagram.com/lupi",
-    linkedin: "https://linkedin.com/in/lupi",
+    instagram: "https://instagram.com/najwahulgusri",
   },
   {
-    name: "Lupi",
+    name: "Ipit",
     role: "Babu",
     image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
-    instagram: "https://instagram.com/lupi",
-    linkedin: "https://linkedin.com/in/lupi",
+    instagram: "https://instagram.com/_fthrmzzbah",
   },
   {
-    name: "Lupi",
+    name: "Salma",
     role: "Babu",
     image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
-    instagram: "https://instagram.com/lupi",
-    linkedin: "https://linkedin.com/in/lupi",
+    instagram: "https://instagram.com/salma.ditaa",
   },
   {
-    name: "Lupi",
+    name: "Kia",
     role: "Babu",
     image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
-    instagram: "https://instagram.com/lupi",
-    linkedin: "https://linkedin.com/in/lupi",
-  },
-  {
-    name: "Lupi",
-    role: "Babu",
-    image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
-    instagram: "https://instagram.com/lupi",
-    linkedin: "https://linkedin.com/in/lupi",
-  },
-  {
-    name: "Lupi",
-    role: "Babu",
-    image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
-    instagram: "https://instagram.com/lupi",
-    linkedin: "https://linkedin.com/in/lupi",
-  },
-  {
-    name: "Lupi",
-    role: "Babu",
-    image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
-    instagram: "https://instagram.com/lupi",
-    linkedin: "https://linkedin.com/in/lupi",
-  },
-  {
-    name: "Lupi",
-    role: "Babu",
-    image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
-    instagram: "https://instagram.com/lupi",
-    linkedin: "https://linkedin.com/in/lupi",
-  },
-  {
-    name: "Lupi",
-    role: "Babu",
-    image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
-    instagram: "https://instagram.com/lupi",
-    linkedin: "https://linkedin.com/in/lupi",
-  },
-  {
-    name: "Lupi",
-    role: "Babu",
-    image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
-    instagram: "https://instagram.com/lupi",
-    linkedin: "https://linkedin.com/in/lupi",
-  },
-  {
-    name: "Lupi",
-    role: "Babu",
-    image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
-    instagram: "https://instagram.com/lupi",
-    linkedin: "https://linkedin.com/in/lupi",
-  },
-  {
-    name: "Lupi",
-    role: "Babu",
-    image: "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
-    instagram: "https://instagram.com/lupi",
-    linkedin: "https://linkedin.com/in/lupi",
-  },
+    instagram: "https://instagram.com/sazkiarhmdinaa_",
+  }
 ];
 
 // Modal wrapper
@@ -209,7 +150,7 @@ export default function AnggotaAtiverse() {
   const [selectedIndex, setSelectedIndex] = useState(null);
 
   return (
-    <section className="py-20 bg-gradient-to-b from-black via-gray-900 to-black text-white">
+    <section id="member" className="py-20 bg-gradient-to-b from-black via-gray-900 to-black text-white">
       <div className="container mx-auto px-4">
         {/* Header */}
         <motion.div

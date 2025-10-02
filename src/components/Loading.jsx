@@ -13,7 +13,7 @@ const Loading = () => {
           repeat: Infinity,
           ease: "easeInOut"
         }}
-        className="w-16 h-16 rounded-full bg-gradient-to-r from-purple-500 to-pink-500"
+        className="w-16 h-16 rounded-full bg-gradient-to-r from-gray-500 to-purple-500"
       />
     </div>
   );

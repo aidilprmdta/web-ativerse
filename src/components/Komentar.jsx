@@ -243,10 +243,10 @@ export default function Komentar() {
                 placeholder="Tuliskan pesan disini..."
                 className="w-full p-4 h-40 rounded-xl bg-white/15 text-white placeholder:text-white/60 border border-white/30 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent transition-all resize-none"
                 required
-                maxLength={500}
+                maxLength={200}
               />
               <div className="text-xs text-white/50 text-right">
-                {form.pesan.length}/500 karakter
+                {form.pesan.length}/200 karakter
               </div>
             </div>
 

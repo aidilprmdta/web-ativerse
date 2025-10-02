@@ -4,12 +4,8 @@ import AOS from 'aos';
 import { motion, AnimatePresence } from "framer-motion";
 
 const images = [
-  "https://dl.dropboxusercontent.com/scl/fi/qzbt7mgzd850gpz6uuzro/IMG-20241002-WA0093.jpg?rlkey=76k1tv79phkrt4utgkiycwaw1",
-  "https://dl.dropboxusercontent.com/scl/fi/f9xr0h8bgpp5p8r9hhlmc/IMG-20241002-WA0107.jpg?rlkey=6t74dvxgyhvz6oswc4s79d6un",
-  "https://dl.dropboxusercontent.com/scl/fi/zje3wj838gzr86kveizlh/IMG-20241002-WA0111.jpg?rlkey=rap25j3cqxhhc8c7nonhgshdm",
   "https://dl.dropboxusercontent.com/scl/fi/tssajeyxmg1p3jsmuxk8b/IMG-20241007-WA0011.jpg?rlkey=t1yym57rihkhptyawlmmt620z",
   "https://dl.dropboxusercontent.com/scl/fi/y49lqq93qrtctdmmrnvl6/IMG-20241114-WA0172.jpg?rlkey=y7wgpbirnjth5qm0j46hhvvhk",
-  "https://dl.dropboxusercontent.com/scl/fi/o2laf16qw7dlalxnwipqq/mutpi.png?rlkey=693573vejla6t3qoiii4pd63l",
   "https://dl.dropboxusercontent.com/scl/fi/1cx3bvynuxubi1p9xgloi/IMG-20250224-WA0424.jpg?rlkey=4sycoy0teoi0xxpvwm70t4u5a",
   "https://dl.dropboxusercontent.com/scl/fi/1wn885b0o6diambm1bdrv/photo_2024-12-17_10-08-31.jpg?rlkey=d5suj68rs6sz9bvod342867v2",
   "https://dl.dropboxusercontent.com/scl/fi/i8ulwuz4gpptdec6r52ex/IMG-20241227-WA0170.jpg?rlkey=xvzai1tm61edw1rtsz198fwh4",
@@ -20,6 +16,21 @@ const images = [
   "https://dl.dropboxusercontent.com/scl/fi/hlthca821kq5z92mek6ko/IMG-20241220-WA0372.jpg?rlkey=im7j1j37iukxykefhr52godqp",
   "https://dl.dropboxusercontent.com/scl/fi/a4dwhqhiuowdrfyd2jc91/IMG-20241224-WA0122.jpg?rlkey=x0kyqkmvphpqlyyur7uyztybv",  
   "https://www.dropbox.com/scl/fi/2v0ppbsm904rxicyw3z5o/IMG-20250910-WA0025-1.jpg?rlkey=f34wjdq9q36dbi8d12jd9hizy&st=ghc3p177&raw=1",
+  "https://www.dropbox.com/scl/fi/3w6k8kw41mlr6anasafsb/5ef66d702e3822f30e31a3046043e350_0.jpeg?rlkey=eehgozt1rj2zzy7p15b1n7t9x&st=rt0lrb3q&raw=1",
+  "https://www.dropbox.com/scl/fi/m7gzaqp17rjeqy9w33rrv/44563a2490a32804677e493c4d135e9d_0.jpeg?rlkey=b2kv3k4celiuegylpndczxrla&st=10e414fb&raw=1",
+  "https://www.dropbox.com/scl/fi/jtbgow5s2bwfdfmxhwgw7/09f8fb51ce3ab62b02ac0126a6db1cc8_0.jpeg?rlkey=aops8r2gwqd81is06wkn4u919&st=d66du4gt&raw=1",
+  "https://www.dropbox.com/scl/fi/nlgn85yb6cjiasbufrmpr/a2af794061144dddb9da7b6f1519a5b6_0.jpeg?rlkey=1lvav71tnz0fbkdoqs4gt6mhq&st=pznurkcn&raw=1",
+  "https://www.dropbox.com/scl/fi/0wngwhw46rcl4ete4udle/IMG_20250224_123514.jpg?rlkey=lsequh9w68lwz8tatyj4j6am8&st=obcs3y1g&raw=1",
+  "https://www.dropbox.com/scl/fi/337gnoumq8cnztp2b64ff/IMG_20250605_121933.jpg?rlkey=xjg76jld5i7fj9cvdr0hl1vv0&st=msc9ci4l&raw=1",
+  "https://www.dropbox.com/scl/fi/hueic6qgy53exku1wb3nx/IMG_20250417_105826.jpg?rlkey=ctk9j70ez37r84kwifk4ii4kt&st=ozv7p6qa&raw=1",
+  "https://www.dropbox.com/scl/fi/6zf167s00okq6n6ncftsl/IMG_20250417_100729.jpg?rlkey=h5d37u7wrg8dsfl32m5miy66h&st=o1mfrz4y&raw=1",
+  "https://www.dropbox.com/scl/fi/4wy4a9d8il2rofzq33gvk/IMG_20250605_122624.jpg?rlkey=sz1nonxm607whtvya7766tfew&st=rmd2oapl&raw=1",
+  "https://www.dropbox.com/scl/fi/nkv69joygkyln7bqvo92t/IMG_20250605_122111.jpg?rlkey=j0ao04z16gn4hooi8gdc6zwrg&st=khfo5fnj&raw=1",
+  "https://www.dropbox.com/scl/fi/p0zs59y2xeemdezlus6sp/IMG_20250919_195652.jpg?rlkey=3nh4bgvobyoz5mn7og4na36aq&st=s65douiu&raw=1",
+  "https://www.dropbox.com/scl/fi/rmsqfx5lt6thbu6wb8d13/IMG_20250924_094705.jpg?rlkey=r22qyz4s0uhsxidcwnsprdaza&st=q5yarvbb&raw=1",
+  "https://www.dropbox.com/scl/fi/0dgf270hvh0tjxtpwj024/IMG_20250605_123337.jpg?rlkey=grhp7zjc2ipobudh1ncai2fze&st=ub56yvu1&raw=1",
+  "https://www.dropbox.com/scl/fi/1t900ib4tj6s899qdynza/IMG_20250924_094824.jpg?rlkey=yqyjxffegz2cy6jwtuw3ev3yp&st=2pdc0f0a&raw=1",
+
   
 ];
 

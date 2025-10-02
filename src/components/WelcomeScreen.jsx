@@ -59,7 +59,8 @@ export default function WelcomeScreen({ onFinish }) {
             textShadow: '0 0 5px rgba(255,255,255,0.3)'
           }}
         >
-          Welcome to website ATIVERSE, a place where you can explore the universe of music, art, and creativity. Join us in this journey!
+          Selamat datang di Ativerse 🌌
+          Mari jelajahi ruang penuh warna, cerita, dan kebersamaan.
         </motion.p>
         
         <motion.div
