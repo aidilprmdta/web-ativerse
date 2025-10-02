@@ -3,9 +3,9 @@ import { ArrowRight } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const images = [
-  "https://dl.dropboxusercontent.com/scl/fi/2t0srsxlac87usl1tpvgi/IMG-20241209-WA0087.jpg?rlkey=q59un42wekrqq8kjbjfxr4yb4",
-  "https://dl.dropboxusercontent.com/scl/fi/hlthca821kq5z92mek6ko/IMG-20241220-WA0372.jpg?rlkey=im7j1j37iukxykefhr52godqp",
-  "https://dl.dropboxusercontent.com/scl/fi/a4dwhqhiuowdrfyd2jc91/IMG-20241224-WA0122.jpg?rlkey=x0kyqkmvphpqlyyur7uyztybv",  
+  "https://www.dropbox.com/scl/fi/6wly8ztqdzjvs2omvdcxd/IMG-20250224-WA0498.jpg?rlkey=bisbqtrl7xlzas5jngr81guxq&st=z4hhhzxf&raw=1",
+  "https://www.dropbox.com/scl/fi/0vha55s2hmo3mldmyz8et/IMG-20241114-WA0134.jpg?rlkey=u9z0xq9u1vt7ygcw2ri7mb98e&st=kabfyxjh&raw=1",
+  "https://www.dropbox.com/scl/fi/33ehmpxvfgibc2seildr3/IMG-20241108-WA0091.jpg?rlkey=ovgo9wgpmiwid9awa0cb1s6lc&st=2k7ecv6n&raw=1",
 ];
 
 export default function Home() {
