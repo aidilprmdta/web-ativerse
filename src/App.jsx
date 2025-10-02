@@ -88,6 +88,7 @@
 
               <div id="question" className="p-10 bg-black text-white">
                 <h1 className="text-5xl text-center font-bold mb-4">Our FAQ's.</h1>
+                <div className="w-50 h-1 bg-white  mx-auto mb-6 rounded-full" />
                   <Accordion type="single" collapsible className="w-full text-4xl">
                     <AccordionItem value="item-1">
                       <AccordionTrigger>Apa itu Ativerse?</AccordionTrigger>
