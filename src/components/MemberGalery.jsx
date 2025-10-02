@@ -15,7 +15,7 @@ const members = [
   {
     name: "Lupi",
     role: "Play Boy",
-    image: "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/lupi.jpg",
+    image: "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/lupii.jpg",
     instagram: "https://instagram.com/andikaprtmlupii_",
     linkedin: "https://linkedin.com/in/andikaprtmlupii_",
     github: "https://github.com/andikaprtmlupii_"
