@@ -29,7 +29,7 @@ const members = [
   {
     name: "Apez",
     role: "Playboy",
-    image: "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/apez.jpg",
+    image: "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/apezz.jpg",
     instagram: "https://instagram.com/hafizrai_"
   },
   {
