@@ -71,9 +71,9 @@ Web Ativerse adalah website single-page (SPA) interaktif untuk kelas yang menamp
 
 ## 🙏 Ucapan Terima Kasih
 Terima kasih kepada semua yang telah mendukung pengembangan project ini:
-🐛 Pelapor bug
-💡 Pemberi saran
-❤️ Supporters
+* 🐛 Pelapor bug
+* 💡 Pemberi saran
+* ❤️ Supporters
 
 ## 🤝 Kontribusi
 
@@ -91,5 +91,5 @@ MIT License © 2025 [Aidil Pramadita Putra](https://github.com/aidilprmdta)
 
 <div align="center">
 ⭐ Jangan lupa beri bintang di repository ini jika Anda menyukainya!
-Web ATIVerse - Membawa pengalaman ATI ke level berikutnya! 🚀
+Web Atierse - Membawa pengalaman Ativerse ke level berikutnya! 🚀
 </div>
