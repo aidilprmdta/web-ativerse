@@ -69,10 +69,27 @@ Web Ativerse adalah website single-page (SPA) interaktif untuk kelas yang menamp
 * Komentar disimpan dalam table `comments`
 * Galeri gambar disimpan di bucket Supabase Storage
 
+## 🙏 Ucapan Terima Kasih
+Terima kasih kepada semua yang telah mendukung pengembangan project ini:
+🐛 Pelapor bug
+💡 Pemberi saran
+❤️ Supporters
+
 ## 🤝 Kontribusi
 
 Kontribusi terbuka untuk siapa pun. Silakan fork dan pull request!
+Kami sangat menghargai kontribusi dari komunitas! Berikut cara berkontribusi:
+1. Fork project ini
+2. Buat branch fitur baru (git checkout -b feature/AmazingFeature)
+3. Commit perubahan Anda (git commit -m 'Add some AmazingFeature')
+4. Push ke branch (git push origin feature/AmazingFeature)
+5. Buat Pull Request
 
 ## 📄 Lisensi
 
 MIT License © 2025 [Aidil Pramadita Putra](https://github.com/aidilprmdta)
+
+<div align="center">
+⭐ Jangan lupa beri bintang di repository ini jika Anda menyukainya!
+Web ATIVerse - Membawa pengalaman ATI ke level berikutnya! 🚀
+</div>
