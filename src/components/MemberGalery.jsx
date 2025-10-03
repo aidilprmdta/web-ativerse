@@ -7,133 +7,154 @@ const members = [
   {
     name: "Aidil",
     role: "Developer Fullstack",
-    image: "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/Aidil.JPG",
+    image:
+      "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/Aidil.JPG",
     instagram: "https://instagram.com/aidilprmdta",
     linkedin: "https://linkedin.com/in/aidilprmdta",
-    github: "https://github.com/aidilprmdta"
+    github: "https://github.com/aidilprmdta",
   },
   {
     name: "Lupi",
     role: "Play Boy",
-    image: "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/lupii.jpg",
+    image:
+      "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/lupii.jpg",
     instagram: "https://instagram.com/andikaprtmlupii_",
     linkedin: "https://linkedin.com/in/andikaprtmlupii_",
-    github: "https://github.com/andikaprtmlupii_"
+    github: "https://github.com/andikaprtmlupii_",
   },
   {
     name: "Kijul",
     role: "Panglima Tempur",
-    image: "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/kijul%20(1).jpg",
+    image:
+      "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/kijul%20(1).jpg",
     instagram: "https://instagram.com/jujulianrifqi",
   },
   {
     name: "Apez",
     role: "Playboy",
-    image: "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/apezz.jpg",
-    instagram: "https://instagram.com/hafizrai_"
+    image:
+      "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/apezz.jpg",
+    instagram: "https://instagram.com/hafizrai_",
   },
   {
     name: "Irwan",
     role: "Kosma",
-    image: "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/irwan.jpg",
-    instagram: "https://instagram.com/irwansyahputra838"
+    image:
+      "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/irwan.jpg",
+    instagram: "https://instagram.com/irwansyahputra838",
   },
   {
     name: "Cudid",
     role: "Babu",
-    image: "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/cudid.jpg",
+    image:
+      "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/cudid.jpg",
     instagram: "https://instagram.com/am.diiid_",
   },
   {
     name: "Arifal",
     role: "Babu",
-    image: "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/arrifal.jpg",
+    image:
+      "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/arrifal.jpg",
     instagram: "https://instagram.com/rifaru_30",
   },
   {
     name: "Davie",
     role: "Pak Bos",
-    image: "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/pak%20bos.jpg",
+    image:
+      "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/pak%20bos.jpg",
     instagram: "https://instagram.com/fauzandafie11",
   },
   {
     name: "Hafy",
     role: "Babu",
-    image: "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/hafy.jpg",
+    image:
+      "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/hafy.jpg",
     instagram: "https://instagram.com/fajrhfy.wirani_",
   },
   {
     name: "Bayu",
     role: "Babu",
-    image: "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/bayu.jpg",
+    image:
+      "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/bayu.jpg",
     instagram: "https://instagram.com/bay_hen_563",
   },
   {
     name: "Syafwan",
     role: "Babu",
-    image: "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/syfwan.jpg",
+    image:
+      "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/syfwan.jpg",
     instagram: "https://instagram.com/waannskyy",
   },
   {
     name: "Ishna",
     role: "Babu",
-    image: "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/ishna.jpg",
+    image:
+      "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/ishna.jpg",
     instagram: "https://instagram.com/_nrfwzyh",
   },
   {
     name: "Joo",
     role: "Babu",
-    image: "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/jojo.jpg",
+    image:
+      "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/jojo.jpg",
     instagram: "https://instagram.com/julioo_aja",
   },
   {
     name: "Lathifa",
     role: "Babu",
-    image: "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/lathifa.jpg",
+    image:
+      "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/lathifa.jpg",
     instagram: "https://instagram.com/lupi",
   },
   {
     name: "Ramadhan",
     role: "Babu",
-    image: "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/rama.jpg",
+    image:
+      "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/rama.jpg",
     instagram: "https://instagram.com/chif_l1",
   },
   {
     name: "Radika",
     role: "Babu",
-    image: "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/radika.jpg",
+    image:
+      "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/radika.jpg",
     instagram: "https://instagram.com/xxdikaa12",
   },
   {
     name: "Mutia",
     role: "Bendahara",
-    image: "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/tia.jpg",
+    image:
+      "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/tia.jpg",
     instagram: "https://instagram.com/maviraee",
   },
   {
     name: "Wawa",
     role: "Babu",
-    image: "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/wawa.jpg",
+    image:
+      "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/wawa.jpg",
     instagram: "https://instagram.com/najwahulgusri",
   },
   {
     name: "Ipit",
     role: "Babu",
-    image: "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/ipit.jpg",
+    image:
+      "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/ipit.jpg",
     instagram: "https://instagram.com/_fthrmzzbah",
   },
   {
     name: "Salma",
     role: "Babu",
-    image: "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/salma.jpg",
+    image:
+      "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/salma.jpg",
     instagram: "https://instagram.com/salma.ditaa",
   },
   {
     name: "Kia",
     role: "Bendahara",
-    image: "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/kia.jpg",
+    image:
+      "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/kia.jpg",
     instagram: "https://instagram.com/sazkiarhmdinaa_",
-  }
+  },
 ];
 
 // Modal wrapper
@@ -150,7 +171,10 @@ export default function AnggotaAtiverse() {
   const [selectedIndex, setSelectedIndex] = useState(null);
 
   return (
-    <section id="member" className="py-20 bg-gradient-to-b from-black via-gray-900 to-black text-white">
+    <section
+      id="member"
+      className="py-20 bg-gradient-to-b from-black via-gray-900 to-black text-white"
+    >
       <div className="container mx-auto px-4">
         {/* Header */}
         <motion.div
@@ -184,7 +208,9 @@ export default function AnggotaAtiverse() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="mt-4 text-lg font-bold text-center">{member.name}</h3>
+              <h3 className="mt-4 text-lg font-bold text-center">
+                {member.name}
+              </h3>
               <p className="text-center text-gray-400 text-sm">{member.role}</p>
             </motion.div>
           ))}
