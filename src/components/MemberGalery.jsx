@@ -23,7 +23,7 @@ const members = [
   {
     name: "Kijul",
     role: "Panglima Tempur",
-    image: "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/kijul.jpg",
+    image: "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/kijul%20(1).jpg",
     instagram: "https://instagram.com/jujulianrifqi",
   },
   {
@@ -83,7 +83,7 @@ const members = [
   {
     name: "Joo",
     role: "Babu",
-    image: "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/joo.jpg",
+    image: "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/galeri/jojo.jpg",
     instagram: "https://instagram.com/julioo_aja",
   },
   {
