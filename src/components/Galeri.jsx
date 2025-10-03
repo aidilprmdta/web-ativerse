@@ -18,7 +18,6 @@ const images = [
 "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/ativerse_galeri/IMG-20250908-WA0026(1).jpg",
 "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/ativerse_galeri/IMG-20250909-WA0015.jpg",
 "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/ativerse_galeri/pakbos%20ganteng.jpg",
-"https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/ativerse_galeri/ppp.jpg",
 "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/ativerse_galeri/IMG_2356.JPG",
 "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/ativerse_galeri/IMG_4527.JPG",
 "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/ativerse_galeri/IMG-20250826-WA0571.jpg",
