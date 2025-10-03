@@ -1,27 +1,28 @@
 
 # 🌐 Web Ativerse
 
-Web Ativerse adalah website single-page (SPA) interaktif untuk kelas yang menampilkan informasi penting seperti Home, About, Member Galery, Komentar, Galeri, dan Kontributor. Dibangun menggunakan React, TailwindCSS, GSAP, AOS, Framer Motion, dan Supabase untuk menyimpan komentar secara real-time.
+Web Ativerse adalah website single-page (SPA) interaktif untuk kelas yang menampilkan informasi penting seperti Home, About, Member Galeri, Komentar, Galeri. Dibangun menggunakan React, TailwindCSS, GSAP, AOS, Framer Motion, dan Supabase untuk menyimpan komentar secara real-time.
 
 ## 🚀 Fitur Utama
 
 - ✨ **Welcome Screen** interaktif
 - 📄 SPA (Single Page Application) – Navigasi tanpa reload
 - 💬 Komentar langsung tampil setelah dikirim
-- 🖼️ Galeri dengan upload gambar & preview modal
-- 🔐 Login otentikasi (khusus murid untuk upload)
+- 🖼️ Galeri dengan preview modal
 - 🛡️ Fitur hapus gambar hanya untuk admin
 - 🎨 Animasi dinamis & desain responsif
 
 ## 🛠️ Teknologi yang Digunakan
 
 - [React.js](https://reactjs.org/)
+- [React Router Dom](https://reactrouter.com/)
 - [Tailwind CSS](https://tailwindcss.com/)
+- [Vite](https://vitejs.dev/)
 - [Framer Motion](https://www.framer.com/motion/)
-- [GSAP](https://greensock.com/gsap/)
 - [AOS (Animate On Scroll)](https://michalsnik.github.io/aos/)
 - [Supabase](https://supabase.com/) – Database & Auth
 - [Lucide Icons](https://lucide.dev/)
+- [Goggle Fonts](https://fonts.google.com/)
 
 ## 🧑‍💻 Instalasi Lokal
 
@@ -53,9 +54,9 @@ Web Ativerse adalah website single-page (SPA) interaktif untuk kelas yang menamp
 
 * **Home**: Intro + navigasi
 * **About**: Informasi singkat kelas
-* **Contact**: Kontak ketua kelas/pengurus
+* **Member**: Anggota Ativerse
+* **Galeri**: Menampilkan foto kenangan
 * **Komentar**: Form + daftar komentar (real-time)
-* **Galeri**: Upload & tampilkan foto kenangan
 
 ## 📷 Preview
 
