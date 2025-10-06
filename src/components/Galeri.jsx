@@ -29,7 +29,6 @@ const images = [
   "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/ativerse_galeri/IMG-20241002-WA0043.jpg",
   "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/ativerse_galeri/IMG-20241002-WA0049.jpg",
   "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/ativerse_galeri/IMG-20241007-WA0011.jpg",
-  "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/ativerse_galeri/IMG-20241013-WA0196.jpg",
   "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/ativerse_galeri/IMG-20241028-WA0071.jpg",
   "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/ativerse_galeri/IMG-20241108-WA0065.jpg",
   "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/ativerse_galeri/IMG-20241114-WA0125.jpg",
