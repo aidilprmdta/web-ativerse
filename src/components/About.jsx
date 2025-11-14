@@ -132,7 +132,7 @@ export default function About() {
               {/* Replace these with your actual images */}
               {[
                 "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/ativerse_galeri/IMG-20250224-WA0404.jpg",
-                "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/ativerse_galeri/IMG-20250224-WA0422.jpg",
+                "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/ativerse_galeri/ahay.JPG",
                 "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/ativerse_galeri/IMG-20250224-WA0480.jpg",
                 "https://rgtmxmwnsznezcdxdejx.supabase.co/storage/v1/object/public/ativerse_galeri/IMG-20241204-WA0174.jpg",
               ].map((src, index) => (
